@@ -24,13 +24,13 @@ nix develop
 Para construir el sitio:
 
 ```sh
-zine build
+zine release
 ```
 
 Para servir en local:
 
 ```sh
-zine serve
+zine
 ```
 
 ## Licencia
