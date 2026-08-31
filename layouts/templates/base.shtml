@@ -21,18 +21,18 @@
 		<link rel="preload" href="$site.asset('fonts/Montserrat-700i.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<super>
 	</head>
-	<body id="body">
-		<nav>
-			<a href="$site.page('estatutos').link()">Estatutos</a>
-			<a href="$site.page('regimen').link()">Régimen</a>
+	<body id="body" class="page">
+		<nav class="nav nav--secondary">
+			<a class="nav__link" href="$site.page('estatutos').link()">Estatutos</a>
+			<a class="nav__link" href="$site.page('regimen').link()">Régimen</a>
 		</nav>
-		<nav>
-			<a href="$site.page('').link()">Inicio</a>
-			<a href="$site.page('nosotros').link()">Nosotros</a>
-			<a href="$site.page('deportes').link()">Deportes</a>
-			<a href="$site.page('servicios').link()">Servicios</a>
-			<a href="$site.page('salones').link()">Salones</a>
-			<a href="$site.page('afiliaciones').link()">Afiliaciones</a>
+		<nav class="nav nav--primary">
+			<a class="nav__link" href="$site.page('').link()">Inicio</a>
+			<a class="nav__link" href="$site.page('nosotros').link()">Nosotros</a>
+			<a class="nav__link" href="$site.page('deportes').link()">Deportes</a>
+			<a class="nav__link" href="$site.page('servicios').link()">Servicios</a>
+			<a class="nav__link" href="$site.page('salones').link()">Salones</a>
+			<a class="nav__link" href="$site.page('afiliaciones').link()">Afiliaciones</a>
 		</nav>
 		<super>
 	</body>

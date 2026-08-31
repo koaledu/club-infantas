@@ -1,6 +1,6 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
-	<h1>Deportes</h1>
+	<h1 class="heading">Deportes</h1>
 	<p>Contenido de Deportes.</p>
 </body>
