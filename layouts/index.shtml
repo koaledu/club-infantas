@@ -1,0 +1,6 @@
+<extend template="base.shtml">
+<head id="head"></head>
+<body id="body">
+	<h1>Inicio</h1>
+	<p>Contenido de Inicio.</p>
+</body>

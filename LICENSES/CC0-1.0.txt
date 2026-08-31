@@ -1,0 +1,146 @@
+Creative Commons Legal Code
+
+CC0 1.0 Universal
+
+CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+LEGAL SERVICES. DISTRIBUTION OF THIS LICENSOR DOES NOT CREATE AN
+ATTORNEY-CLIENT OR ANY OTHER RELATIONSHIP. CREATIVE COMMONS PROVIDES
+THIS INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO
+WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY
+FOR DAMAGES RESULTING FROM ITS USE.
+
+TERMS AND CONDITIONS
+
+0. Definitions.
+
+   a. "Affirmation of originality" means the one-dimensional work that
+   is identified by the Affirmer below and is the subject of this
+   Declaration.
+
+   b. "Affirmer" means the individual or entity that affirm(s) the
+   Licensed Material below.
+
+   c. "Application of the Public Domain Dedication" means the
+   Licensed Material is in the public domain under applicable law.
+   For the avoidance of doubt, section 1(b) of this Declaration
+   constitutes a dedication of the Licensed Material to the public
+   domain for all purposes and for the full term of copyright and any
+   related rights therein.
+
+   d. "Designated License" means the CC0 1.0 Universal public domain
+   dedication.
+
+   e. "Licensed Material" means the one-dimensional work or other
+   material identified by the Affirmer below.
+
+   f. "Licensed Material Element" means the individual elements of the
+   Licensed Material that are identified as such by the Affirmer below.
+
+   g. "Licensed Material Unit" means the collection of Licensed
+   Material Elements identified as such by the Affirmer below.
+
+   h. "License Steward" means the individual or entity that makes the
+   Licensed Material available under the Designated License.
+
+   i. "Relevant Licensed Material" means the one-dimensional work or
+   material identified by the Affirmer below that was obtained from
+   the public domain under the conditions of the Designated License.
+
+   j. "Use" means any use of the Licensed Material not expressly
+   excluded by this Declaration or by applicable law.
+
+   k. "Work" means the one-dimensional work that is identified by the
+   Affirmer below.
+
+1. Affirmation of originality.
+
+   The Affirmer affirms that the Licensed Material is a one-dimensional
+   work and that, to the best of the Affirmer's knowledge, the Licensed
+   Material is:
+
+   a. A one-dimensional work that is original within the meaning of
+   copyright law.
+
+   b. Not subject to any copyright or related rights in any jurisdiction
+   that would prevent the Licensed Material from being in the public
+   domain under this Declaration.
+
+   c. Not subject to any copyright or related rights in any jurisdiction
+   that would prevent the Licensed Material from being freely used by
+   anyone for any purpose.
+
+   d. Free of any restrictions on use that would prevent the Licensed
+   Material from being in the public domain under this Declaration.
+
+   e. Not subject to any restrictions on use that would prevent the
+   Licensed Material from being freely used by anyone for any purpose.
+
+2. Application of the Public Domain Dedication.
+
+   The Affirmer hereby dedicates the Licensed Material to the public
+   domain for all purposes and for the full term of copyright and any
+   related rights therein. The Affirmer makes this dedication for the
+   benefit of the public at large and to the detriment of the Affirmer's
+   heirs and successors. The Affirmer intends this dedication to be an
+   overt act of relinquishment in perpetuity of all present and future
+   rights in the Licensed Material under copyright law.
+
+3. Scope and limitations.
+
+   a. The Designated License is the CC0 1.0 Universal public domain
+   dedication.
+
+   b. The License Steward is Creative Commons Corporation.
+
+   c. No trademark or patent rights are licensed under this Declaration.
+
+   d. Nothing in this Declaration constitutes a waiver of any rights
+   under copyright law, including moral rights, publicity rights, or
+   any other right that might be claimed to protect the originality of
+   the Licensed Material.
+
+   e. This Declaration does not constitute an express or implied
+   warranty by the Affirmer or any other party regarding the Licensed
+   Material, its quality, fitness for a particular purpose, or the
+   absence of defects.
+
+   f. To the extent that any warranty is implied by applicable law and
+   cannot be disclaimed, it is disclaimed to the fullest extent
+   permitted by law.
+
+4. Disclaimer of warranties and limitation of liability.
+
+   a. THE LICENSED MATERIAL IS PROVIDED "AS IS." THE AFFIRMER DISCLAIMS
+   ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+   b. IN NO EVENT WILL THE AFFIRMER OR ANY OTHER PARTY BE LIABLE FOR ANY
+   DAMAGES, INCLUDING DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+   CONSEQUENTIAL DAMAGES, ARISING OUT OF THE USE OF THE LICENSED
+   MATERIAL, EVEN IF THE AFFIRMER OR ANY OTHER PARTY HAS BEEN ADVISED
+   OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. General provisions.
+
+   a. If any provision of this Declaration is held to be invalid,
+   illegal, or unenforceable, it shall be reformed to the minimum extent
+   necessary to make it valid, legal, and enforceable. If it cannot be
+   so reformed, it shall be severed from this Declaration.
+
+   b. No waiver of any provision of this Declaration shall be effective
+   unless in writing and signed by the Affirmer.
+
+   c. This Declaration constitutes the entire agreement between the
+   Affirmer and any other party regarding the Licensed Material.
+
+   d. This Declaration is governed by the laws of the State of California,
+   United States, without regard to conflict of laws principles.
+
+For the avoidance of doubt, this Declaration is not intended to and
+does not: (i) limit any rights that a user may have under applicable
+copyright or related rights laws; (ii) create any implied license or
+other right; or (iii) limit any rights that a user may have under
+applicable law.
+
+For the full text of CC0 1.0 Universal, see:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode

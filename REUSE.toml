@@ -1,0 +1,21 @@
+version = 1
+
+[[annotations]]
+path = "assets/normalize.css"
+SPDX-FileCopyrightText = "2026 Jonathan Neal, Nicolas Gallagher"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = [
+  "assets/style.css",
+  "content/*.smd",
+  "content/.smd.ziggy-schema",
+  "flake.nix",
+  "flake.lock",
+  "layouts/*.shtml",
+  "layouts/templates/*.shtml",
+  "zine.ziggy",
+  ".zine.ziggy-schema"
+]
+SPDX-FileCopyrightText = "2026 Club Infantas <servicioalcliente@clubinfantas.com>"
+SPDX-License-Identifier = "LicenseRef-Proprietary"
