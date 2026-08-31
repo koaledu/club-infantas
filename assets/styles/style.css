@@ -73,22 +73,37 @@
 :root {
   --ff-display: "Montserrat", system-ui, sans-serif;
   --ff-body: "Rubik", system-ui, sans-serif;
+
+  --clr-black: oklch(0 0 0);
+  --clr-white: oklch(1 0 89.9);
+  --clr-yellow: oklch(0.7821 0.1595 113.2);
+  --clr-green: oklch(0.6846 0.1087 166.6);
+  --clr-emerald: oklch(0.5214 0.0965 173.1);
+  --clr-sky: oklch(0.6366 0.1321 244.4);
+  --clr-blue: oklch(0.4618 0.1456 255.0);
 }
 
 html {
   color-scheme: light dark;
 }
 
-body {
+.page {
+  background-color: light-dark(var(--clr-white), var(--clr-black));
+  color: light-dark(var(--clr-black), var(--clr-white));
   font-family: var(--ff-body);
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heading {
   font-family: var(--ff-display);
 }
