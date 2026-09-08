@@ -15,6 +15,8 @@ Propuesta para el nuevo sitio web del Club Infantas, construido con [Zine](https
 
 ## Desarrollo
 
+### Con Nix
+
 Requiere [Nix](https://nixos.org). Entrar al shell de desarrollo:
 
 ```sh
@@ -32,6 +34,24 @@ Para servir en local:
 ```sh
 zine
 ```
+
+### Con Docker o Podman
+
+Requiere [Podman](https://podman.io) o [Docker](https://docker.com).
+
+Construir la imagen:
+
+```sh
+podman build -t club-infantas .
+```
+
+Ejecutar el servidor de desarrollo:
+
+```sh
+podman run -d -p 1990:1990 club-infantas
+```
+
+Abrir `http://localhost:1990`. Los cambios se recargan automáticamente.
 
 ## Licencia
 
