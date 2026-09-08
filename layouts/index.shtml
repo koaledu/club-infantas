@@ -1,6 +1,78 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
-	<h1 class="heading">Inicio</h1>
-	<p>Contenido de Inicio.</p>
+	<!-- Carrusel -->
+	<section class="carousel">
+		<div class="carousel__wrapper" aria-label="Destacados del club">
+			<div class="carousel__track">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
+						<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
+					</div>
+				</div>
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<h2 class="carousel__title">Instalaciones Deportivas</h2>
+						<p class="carousel__text">Canchas, piscinas y áreas de entrenamiento para toda la familia.</p>
+					</div>
+				</div>
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<h2 class="carousel__title">Eventos y Salones</h2>
+						<p class="carousel__text">Organiza tus celebraciones en nuestros espacios exclusivos.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<!-- Card Sobre el Club -->
+		<section class="about">
+			<div class="about__card">
+				<div class="about__image-wrapper">
+					<div class="about__image-placeholder">
+						<span class="about__image-text">[Imagen del Club]</span>
+					</div>
+				</div>
+				<div class="about__body">
+					<h2 class="heading about__title">Sobre el Club Infantas</h2>
+					<p class="about__description">Fundado con el compromiso de ofrecer un espacio de encuentro, deporte y cultura para nuestros afiliados y sus familias. Contamos con modernas instalaciones, torneos deportivos y eventos sociales todo el año.</p>
+					<a href="$site.page('nosotros').link()" class="btn about__btn">Conoce más</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Novedades / New Stuff -->
+		<section class="news">
+			<h2 class="heading news__heading">Novedades</h2>
+			<div class="news__grid">
+				<article class="news-card">
+					<div class="news-card__image-placeholder">[Imagen Noticia 1]</div>
+					<div class="news-card__body">
+						<span class="news-card__date">Próximo evento</span>
+						<h3 class="news-card__title">Torneo Deportivo Anual</h3>
+						<p class="news-card__text">Inscripciones abiertas para todas las categorías deportivas.</p>
+					</div>
+				</article>
+				<article class="news-card">
+					<div class="news-card__image-placeholder">[Imagen Noticia 2]</div>
+					<div class="news-card__body">
+						<span class="news-card__date">Mejoras</span>
+						<h3 class="news-card__title">Nuevas Instalaciones</h3>
+						<p class="news-card__text">Renovación de zonas recreativas y salones comunales.</p>
+					</div>
+				</article>
+				<article class="news-card">
+					<div class="news-card__image-placeholder">[Imagen Noticia 3]</div>
+					<div class="news-card__body">
+						<span class="news-card__date">Afiliaciones</span>
+						<h3 class="news-card__title">Jornada de Afiliación</h3>
+						<p class="news-card__text">Conoce los beneficios y planes disponibles para nuevos miembros.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
 </body>
