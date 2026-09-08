@@ -12,4 +12,4 @@ WORKDIR /src
 
 EXPOSE 1990
 
-CMD ["zine", "--host", "0.0.0.0"]
+CMD ["sh", "-c", "printf '\\n  → http://localhost:1990\\n\\n' && zine --host 0.0.0.0"]

@@ -48,10 +48,10 @@ podman build -t club-infantas .
 Ejecutar el servidor de desarrollo:
 
 ```sh
-podman run -d -p 1990:1990 club-infantas
+podman run --rm --init -p 1990:1990 club-infantas
 ```
 
-Abrir `http://localhost:1990`. Los cambios se recargan automáticamente.
+Abrir `http://localhost:1990`. Ctrl+C para detener.
 
 ## Licencia
 
