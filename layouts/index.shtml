@@ -2,29 +2,46 @@
 <head id="head"></head>
 <body id="body">
 	<!-- Carrusel -->
-	<section class="carousel">
-		<div class="carousel__wrapper" aria-label="Destacados del club">
-			<div class="carousel__track">
-				<div class="carousel__slide">
+	<section class="carousel" aria-label="Destacados del club">
+		<input type="radio" name="carousel-nav" id="carousel-nav-1" class="carousel__nav-input" checked>
+		<input type="radio" name="carousel-nav" id="carousel-nav-2" class="carousel__nav-input">
+		<input type="radio" name="carousel-nav" id="carousel-nav-3" class="carousel__nav-input">
+
+		<div class="carousel__viewport">
+			<ul class="carousel__track">
+				<li class="carousel__slide">
 					<div class="carousel__content">
 						<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
 						<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
 					</div>
-				</div>
-				<div class="carousel__slide">
+				</li>
+				<li class="carousel__slide">
 					<div class="carousel__content">
 						<h2 class="carousel__title">Instalaciones Deportivas</h2>
 						<p class="carousel__text">Canchas, piscinas y áreas de entrenamiento para toda la familia.</p>
 					</div>
-				</div>
-				<div class="carousel__slide">
+				</li>
+				<li class="carousel__slide">
 					<div class="carousel__content">
 						<h2 class="carousel__title">Eventos y Salones</h2>
 						<p class="carousel__text">Organiza tus celebraciones en nuestros espacios exclusivos.</p>
 					</div>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
+
+		<nav class="carousel__pagination" aria-label="Navegación del carrusel">
+			<label for="carousel-nav-1" class="carousel__dot" aria-label="Slide 1"></label>
+			<label for="carousel-nav-2" class="carousel__dot" aria-label="Slide 2"></label>
+			<label for="carousel-nav-3" class="carousel__dot" aria-label="Slide 3"></label>
+		</nav>
+
+		<label for="carousel-nav-3" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-1" aria-label="Anterior"></label>
+		<label for="carousel-nav-1" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-2" aria-label="Anterior"></label>
+		<label for="carousel-nav-2" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-3" aria-label="Anterior"></label>
+		<label for="carousel-nav-2" class="carousel__arrow carousel__arrow--next carousel__arrow--state-1" aria-label="Siguiente"></label>
+		<label for="carousel-nav-3" class="carousel__arrow carousel__arrow--next carousel__arrow--state-2" aria-label="Siguiente"></label>
+		<label for="carousel-nav-1" class="carousel__arrow carousel__arrow--next carousel__arrow--state-3" aria-label="Siguiente"></label>
 	</section>
 
 	<div class="container">
