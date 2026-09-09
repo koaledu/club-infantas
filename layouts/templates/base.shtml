@@ -23,18 +23,29 @@
 	</head>
 	<body id="body" class="page">
 		<header class="site-header">
-			<nav class="nav nav--secondary">
-				<a class="nav__link" href="$site.page('estatutos').link()">Estatutos</a>
-				<a class="nav__link" href="$site.page('regimen').link()">Régimen</a>
-			</nav>
-			<nav class="nav nav--primary">
-				<a class="nav__link" href="$site.page('').link()">Inicio</a>
-				<a class="nav__link" href="$site.page('nosotros').link()">Nosotros</a>
-				<a class="nav__link" href="$site.page('escuelas').link()">Escuelas</a>
-				<a class="nav__link" href="$site.page('instalaciones').link()">Instalaciones</a>
-				<a class="nav__link" href="$site.page('afiliaciones').link()">Afiliaciones</a>
-				<a class="nav__link" href="$site.page('convenios').link()">Convenios</a>
-			</nav>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+			<label for="nav-toggle" class="burger" aria-label="Menú">
+				<span class="burger__icon">
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</span>
+				<span class="burger__text">Menú</span>
+			</label>
+			<div class="header-nav-wrap">
+				<nav class="nav nav--secondary">
+					<a class="nav__link" href="$site.page('estatutos').link()">Estatutos</a>
+					<a class="nav__link" href="$site.page('regimen').link()">Régimen</a>
+				</nav>
+				<nav class="nav nav--primary">
+					<a class="nav__link" href="$site.page('').link()">Inicio</a>
+					<a class="nav__link" href="$site.page('nosotros').link()">Nosotros</a>
+					<a class="nav__link" href="$site.page('escuelas').link()">Escuelas</a>
+					<a class="nav__link" href="$site.page('instalaciones').link()">Instalaciones</a>
+					<a class="nav__link" href="$site.page('afiliaciones').link()">Afiliaciones</a>
+					<a class="nav__link" href="$site.page('convenios').link()">Convenios</a>
+				</nav>
+			</div>
 		</header>
 		<super>
 		<footer class="footer">
