@@ -7,7 +7,6 @@ RUN apk add --no-cache curl xz
 RUN curl -fsSL "https://github.com/kristoff-it/zine/releases/download/v${ZINE_VERSION}/x86_64-linux-musl.tar.xz" \
     | tar -xJ -C /usr/local/bin
 
-COPY . /src
 WORKDIR /src
 
 EXPOSE 1990

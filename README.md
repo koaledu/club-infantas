@@ -45,11 +45,13 @@ Construir la imagen:
 podman build -t club-infantas .
 ```
 
-Ejecutar el servidor de desarrollo:
+Ejecutar el servidor de desarrollo con live reload:
 
 ```sh
-podman run --rm --init -p 1990:1990 club-infantas
+podman run --rm -p 1990:1990 -v "$(pwd):/src:Z" club-infantas
 ```
+
+El bind mount (`-v`) sincroniza los archivos del host al contenedor, permitiendo live reload. Sin `-v`, los cambios no se reflejan.
 
 Abrir `http://localhost:1990`. Ctrl+C para detener.
 
