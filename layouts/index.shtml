@@ -1,5 +1,9 @@
 <extend template="base.shtml">
-<head id="head"></head>
+<head id="head">
+	<link rel="preload" href="$site.asset('images/slide1.avif').link()" as="image">
+	<link rel="preload" href="$site.asset('images/slide2.avif').link()" as="image">
+	<link rel="preload" href="$site.asset('images/slide3.avif').link()" as="image">
+</head>
 <body id="body">
 	<!-- Carrusel -->
 	<section class="carousel" aria-label="Destacados del club">
@@ -9,20 +13,20 @@
 
 		<div class="carousel__viewport">
 			<ul class="carousel__track">
+			<li class="carousel__slide">
+				<div class="carousel__content carousel__content--slide1">
+					<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
+					<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
+				</div>
+			</li>
 				<li class="carousel__slide">
-					<div class="carousel__content">
-						<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
-						<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
-					</div>
-				</li>
-				<li class="carousel__slide">
-					<div class="carousel__content">
+					<div class="carousel__content carousel__content--slide2">
 						<h2 class="carousel__title">Instalaciones Deportivas</h2>
 						<p class="carousel__text">Canchas, piscinas y áreas de entrenamiento para toda la familia.</p>
 					</div>
 				</li>
 				<li class="carousel__slide">
-					<div class="carousel__content">
+					<div class="carousel__content carousel__content--slide3">
 						<h2 class="carousel__title">Eventos y Salones</h2>
 						<p class="carousel__text">Organiza tus celebraciones en nuestros espacios exclusivos.</p>
 					</div>

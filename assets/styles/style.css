@@ -457,7 +457,6 @@ html {
   margin: 1rem 1rem 3rem;
   overflow: hidden;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--emerald-500), var(--blue-500));
 }
 
 .carousel__nav-input {
@@ -467,7 +466,6 @@ html {
 }
 
 .carousel__viewport {
-  overflow: hidden;
 }
 
 .carousel__track {
@@ -486,10 +484,25 @@ html {
 .carousel__slide {
   flex: 0 0 33.3333%;
   min-width: 0;
+  display: block;
+}
+
+.carousel__content--slide1 {
+  background: url("/images/slide1.avif") center/cover no-repeat;
+}
+
+.carousel__content--slide2 {
+  background: url("/images/slide2.avif") center/cover no-repeat;
+}
+
+.carousel__content--slide3 {
+  background: url("/images/slide3.avif") center/cover no-repeat;
 }
 
 .carousel__content {
   aspect-ratio: 32 / 9;
+  width: 100%;
+  box-sizing: border-box;
   color: var(--slate-50);
   display: flex;
   flex-direction: column;
