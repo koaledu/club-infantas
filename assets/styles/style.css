@@ -310,6 +310,21 @@ html {
     transform: translateY(-8.5px) rotate(-45deg);
   }
 
+  .carousel {
+    margin: 0;
+  }
+
+  .carousel__slide-inner {
+    aspect-ratio: auto;
+    height: 60vw;
+    min-height: 200px;
+    max-height: 350px;
+  }
+
+  .carousel__content {
+    padding: 2rem 1rem 3rem;
+  }
+
   .nav {
     flex-direction: column;
     align-items: center;
@@ -487,20 +502,26 @@ html {
   display: block;
 }
 
-.carousel__content--slide1 {
-  background: url("/images/slide1.avif") center/cover no-repeat;
+.carousel__slide-inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel__content--slide2 {
-  background: url("/images/slide2.avif") center/cover no-repeat;
-}
-
-.carousel__content--slide3 {
-  background: url("/images/slide3.avif") center/cover no-repeat;
+.carousel__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .carousel__content {
-  aspect-ratio: 32 / 9;
+  position: absolute;
+  inset: 0;
   width: 100%;
   box-sizing: border-box;
   color: var(--slate-50);
@@ -510,6 +531,7 @@ html {
   justify-content: center;
   text-align: center;
   padding: 3rem 2rem 4.5rem;
+  background: color-mix(in oklch, var(--slate-950) 35%, transparent);
 }
 
 .carousel__title {

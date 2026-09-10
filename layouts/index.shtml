@@ -14,21 +14,30 @@
 		<div class="carousel__viewport">
 			<ul class="carousel__track">
 			<li class="carousel__slide">
-				<div class="carousel__content carousel__content--slide1">
-					<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
-					<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
+				<div class="carousel__slide-inner">
+					<img src="$site.asset('images/slide1.avif').link()" alt="Bienvenido al Club Infantas" class="carousel__img">
+					<div class="carousel__content">
+						<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
+						<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
+					</div>
 				</div>
 			</li>
 				<li class="carousel__slide">
-					<div class="carousel__content carousel__content--slide2">
-						<h2 class="carousel__title">Instalaciones Deportivas</h2>
-						<p class="carousel__text">Canchas, piscinas y áreas de entrenamiento para toda la familia.</p>
+					<div class="carousel__slide-inner">
+						<img src="$site.asset('images/slide2.avif').link()" alt="Instalaciones Deportivas" class="carousel__img">
+						<div class="carousel__content">
+							<h2 class="carousel__title">Instalaciones Deportivas</h2>
+							<p class="carousel__text">Canchas, piscinas y áreas de entrenamiento para toda la familia.</p>
+						</div>
 					</div>
 				</li>
 				<li class="carousel__slide">
-					<div class="carousel__content carousel__content--slide3">
-						<h2 class="carousel__title">Eventos y Salones</h2>
-						<p class="carousel__text">Organiza tus celebraciones en nuestros espacios exclusivos.</p>
+					<div class="carousel__slide-inner">
+						<img src="$site.asset('images/slide3.avif').link()" alt="Eventos y Salones" class="carousel__img">
+						<div class="carousel__content">
+							<h2 class="carousel__title">Eventos y Salones</h2>
+							<p class="carousel__text">Organiza tus celebraciones en nuestros espacios exclusivos.</p>
+						</div>
 					</div>
 				</li>
 			</ul>
