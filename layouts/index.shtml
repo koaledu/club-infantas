@@ -16,7 +16,7 @@
 			<li class="carousel__slide">
 				<div class="carousel__slide-inner">
 					<img src="$site.asset('images/slide1.avif').link()" alt="Bienvenido al Club Infantas" class="carousel__img">
-					<div class="carousel__content">
+					<div class="carousel__content carousel__content--bg">
 						<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
 						<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
 					</div>
@@ -25,8 +25,8 @@
 				<li class="carousel__slide">
 					<div class="carousel__slide-inner">
 						<img src="$site.asset('images/slide2.avif').link()" alt="Instalaciones Deportivas" class="carousel__img">
-						<div class="carousel__content">
-							<h2 class="carousel__title">Instalaciones Deportivas</h2>
+<div class="carousel__content carousel__content--pub">
+						<h2 class="carousel__title">Instalaciones Deportivas</h2>
 							<p class="carousel__text">Canchas, piscinas y áreas de entrenamiento para toda la familia.</p>
 						</div>
 					</div>
@@ -34,8 +34,8 @@
 				<li class="carousel__slide">
 					<div class="carousel__slide-inner">
 						<img src="$site.asset('images/slide3.avif').link()" alt="Eventos y Salones" class="carousel__img">
-						<div class="carousel__content">
-							<h2 class="carousel__title">Eventos y Salones</h2>
+<div class="carousel__content carousel__content--pub">
+						<h2 class="carousel__title">Eventos y Salones</h2>
 							<p class="carousel__text">Organiza tus celebraciones en nuestros espacios exclusivos.</p>
 						</div>
 					</div>

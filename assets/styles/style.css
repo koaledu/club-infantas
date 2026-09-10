@@ -532,6 +532,9 @@ html {
   justify-content: center;
   text-align: center;
   padding: 3rem 2rem 4.5rem;
+}
+
+.carousel__content--bg {
   background: color-mix(in oklch, var(--slate-950) 35%, transparent);
 }
 
