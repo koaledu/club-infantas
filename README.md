@@ -1,6 +1,6 @@
 # Club Infantas
 
-Propuesta para el nuevo sitio web del Club Infantas, construido con [Zine](https://zine-ssg.io) (v0.13.0). Reemplaza la versión actual del sitio.
+Propuesta para el nuevo sitio web del Club Infantas, construido con [Zine](https://zine-ssg.io) (v0.14.0). Reemplaza la versión actual del sitio.
 
 ## Secciones
 

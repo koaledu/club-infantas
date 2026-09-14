@@ -1,6 +1,6 @@
 FROM alpine:3.20
 
-ARG ZINE_VERSION=0.13.0
+ARG ZINE_VERSION=0.14.0
 
 RUN apk add --no-cache curl xz
 
