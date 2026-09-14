@@ -52,7 +52,7 @@
 			<div class="container footer__container">
 				<div class="footer__col footer__col--brand">
 					<h3 class="footer__title">Club Infantas</h3>
-					<p class="footer__text">Espacio de recreación, deporte y familia.</p>
+					<p class="footer__text">Social, cultural y deportivo.</p>
 				</div>
 				<div class="footer__col footer__col--links">
 					<h4 class="footer__title">Navegación</h4>
@@ -74,9 +74,9 @@
 				<div class="footer__col footer__col--contact">
 					<h4 class="footer__title">Contacto</h4>
 					<div class="footer__contact-info">
-						<p class="footer__text"><strong>Dirección:</strong> Calle Principal # 12-34</p>
-						<p class="footer__text"><strong>Teléfono:</strong> +57 (601) 123 4567</p>
-						<p class="footer__text"><strong>Email:</strong> contacto@clubinfantas.com</p>
+						<p class="footer__text"><strong>Dirección:</strong> Parnaso, Cl. 67 #18-79, Barrancabermeja, Santander</p>
+						<p class="footer__text"><strong>Teléfono:</strong> +57 313 4008227</p>
+						<p class="footer__text"><strong>Email:</strong> servicioalcliente@clubinfantas.com</p>
 					</div>
 				</div>
 			</div>

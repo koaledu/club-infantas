@@ -1,6 +1,47 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
-	<h1 class="heading">Nosotros</h1>
-	<p>Contenido de Nosotros.</p>
+	<div class="container body-text">
+		<h1 class="heading">Nosotros</h1>
+		<section class="about">
+			<div class="about__card">
+			<div class="about__image-wrapper">
+				<div class="about__image-placeholder">
+					<span class="about__image-text">[Imagen Historia]</span>
+				</div>
+			</div>
+			<div class="about__body">
+				<h2 class="heading body-text__title">Nuestra historia</h2>
+				<div class="body-text__content">
+					<p>Nuestra historia se ha construido junto a Barrancabermeja y a todas las generaciones que han acompañado al municipio.</p>
+					<p>Con el pasar de los años hemos mejorado nuestros espacios para adaptarnos a las nuevas necesidades en tiempos modernos.</p>
+					<p>Algunos de nuestros mayores hitos han sido la realización de varios eventos deportivos internacionales, como los mundiales de patinaje. Así como la renovación constante de los espacios presentes en el club.</p>
+					<p>Hemos construido un legado con los recuerdos de miles de personas en el pasado que busca estar en los recuerdos de miles de otras en el futuro.</p>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section class="news">
+			<div class="news__grid">
+			<article class="news-card">
+				<div class="news-card__body">
+					<h3 class="news-card__title">Nuestra misión</h3>
+					<p class="news-card__text">Brindar experiencias que busquen promover el bienestar para todos aquellos que estén en el club. Afiliados, clientes, sus familias e sus invitados.</p>
+				</div>
+			</article>
+			<article class="news-card">
+				<div class="news-card__body">
+					<h3 class="news-card__title">Nuestra visión</h3>
+					<p class="news-card__text">Ser la mejor opción para servicios sociales, culturales y deportivos, contribuyendo al bienestar y la calidad de vida de nuestra comunidad.</p>
+				</div>
+			</article>
+			<article class="news-card">
+				<div class="news-card__body">
+					<h3 class="news-card__title">Nuestro compromiso</h3>
+					<p class="news-card__text">Trabajamos para que cada visita, actividad y evento sea una experiencia positiva para todos.</p>
+				</div>
+			</article>
+		</div>
+		</section>
+	</div>
 </body>

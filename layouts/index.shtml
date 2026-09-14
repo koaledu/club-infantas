@@ -67,8 +67,12 @@
 					</div>
 				</div>
 				<div class="about__body">
-					<h2 class="heading about__title">Sobre el Club Infantas</h2>
-					<p class="about__description">Fundado con el compromiso de ofrecer un espacio de encuentro, deporte y cultura para nuestros afiliados y sus familias. Contamos con modernas instalaciones, torneos deportivos y eventos sociales todo el año.</p>
+					<span class="news-card__date">Más de 70 años · Barrancabermeja</span>
+					<h2 class="heading about__title">Un punto de encuentro desde hace generaciones</h2>
+					<div class="about__description">
+						<p>Desde hace más de setenta años, el Club Infantas ha sido un espacio de encuentro para el deporte, la cultura y la vida social en Barrancabermeja.</p>
+						<p>Nacimos con el propósito de brindar espacios de calidad para nuestros afiliados y sus familias, hasta crecer en un lugar donde se unen diferentes personas con trasfondos e intereses únicos.</p>
+					</div>
 					<a href="$site.page('nosotros').link()" class="btn about__btn">Conoce más</a>
 				</div>
 			</div>
