@@ -77,73 +77,11 @@
 }
 
 :root {
-  --yellow-50: oklch(0.970 0.090 113.2);
-  --yellow-100: oklch(0.930 0.166 113.2);
-  --yellow-200: oklch(0.870 0.177 113.2);
-  --yellow-300: oklch(0.780 0.159 113.2);
-  --yellow-400: oklch(0.660 0.135 113.2);
-  --yellow-500: oklch(0.550 0.112 113.2);
-  --yellow-600: oklch(0.470 0.096 113.2);
-  --yellow-700: oklch(0.400 0.082 113.2);
-  --yellow-800: oklch(0.330 0.067 113.2);
-  --yellow-900: oklch(0.270 0.051 113.2);
-  --yellow-950: oklch(0.200 0.035 113.2);
-}
-
-:root {
-  --green-50: oklch(0.970 0.025 166.6);
-  --green-100: oklch(0.930 0.071 166.6);
-  --green-200: oklch(0.870 0.138 166.6);
-  --green-300: oklch(0.780 0.124 166.6);
-  --green-400: oklch(0.660 0.105 166.6);
-  --green-500: oklch(0.550 0.087 166.6);
-  --green-600: oklch(0.470 0.075 166.6);
-  --green-700: oklch(0.400 0.063 166.6);
-  --green-800: oklch(0.330 0.052 166.6);
-  --green-900: oklch(0.270 0.040 166.6);
-  --green-950: oklch(0.200 0.027 166.6);
-}
-
-:root {
-  --emerald-50: oklch(0.970 0.030 173.1);
-  --emerald-100: oklch(0.930 0.088 173.1);
-  --emerald-200: oklch(0.870 0.161 173.1);
-  --emerald-300: oklch(0.780 0.144 173.1);
-  --emerald-400: oklch(0.660 0.122 173.1);
-  --emerald-500: oklch(0.550 0.102 173.1);
-  --emerald-600: oklch(0.470 0.087 173.1);
-  --emerald-700: oklch(0.400 0.074 173.1);
-  --emerald-800: oklch(0.330 0.061 173.1);
-  --emerald-900: oklch(0.270 0.046 173.1);
-  --emerald-950: oklch(0.200 0.032 173.1);
-}
-
-:root {
-  --sky-50: oklch(0.970 0.010 244.4);
-  --sky-100: oklch(0.930 0.026 244.4);
-  --sky-200: oklch(0.870 0.057 244.4);
-  --sky-300: oklch(0.780 0.101 244.4);
-  --sky-400: oklch(0.660 0.137 244.4);
-  --sky-500: oklch(0.550 0.114 244.4);
-  --sky-600: oklch(0.470 0.097 244.4);
-  --sky-700: oklch(0.400 0.083 244.4);
-  --sky-800: oklch(0.330 0.068 244.4);
-  --sky-900: oklch(0.270 0.052 244.4);
-  --sky-950: oklch(0.200 0.035 244.4);
-}
-
-:root {
-  --blue-50: oklch(0.970 0.010 255.0);
-  --blue-100: oklch(0.930 0.029 255.0);
-  --blue-200: oklch(0.870 0.062 255.0);
-  --blue-300: oklch(0.780 0.109 255.0);
-  --blue-400: oklch(0.660 0.176 255.0);
-  --blue-500: oklch(0.550 0.173 255.0);
-  --blue-600: oklch(0.470 0.148 255.0);
-  --blue-700: oklch(0.400 0.126 255.0);
-  --blue-800: oklch(0.330 0.104 255.0);
-  --blue-900: oklch(0.270 0.079 255.0);
-  --blue-950: oklch(0.200 0.054 255.0);
+  --clr-yellow: oklch(0.7821 0.1595 113.2);
+  --clr-green: oklch(0.6846 0.1087 166.6);
+  --clr-emerald: oklch(0.5214 0.0965 173.1);
+  --clr-sky: oklch(0.6366 0.1321 244.4);
+  --clr-blue: oklch(0.4618 0.1456 255.0);
 }
 
 :root {
@@ -454,7 +392,7 @@ html {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--emerald-500);
+  background-color: var(--clr-emerald);
   color: var(--slate-50);
   text-decoration: none;
   border-radius: var(--radius);
@@ -753,7 +691,7 @@ html {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--emerald-500);
+  color: var(--clr-emerald);
   font-weight: 700;
 }
 
@@ -791,7 +729,7 @@ html {
   margin-bottom: 0.5rem;
   font-family: var(--ff-display);
   font-size: 1rem;
-  color: var(--emerald-500);
+  color: var(--clr-emerald);
 }
 
 .contact__text {
