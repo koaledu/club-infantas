@@ -5,11 +5,10 @@
 		<h1 class="heading">Nosotros</h1>
 		<section class="about">
 			<div class="about__card">
-			<div class="about__image-wrapper">
-				<div class="about__image-placeholder">
-					<span class="about__image-text">[Imagen Historia]</span>
-				</div>
-			</div>
+			<figure class="about__image-wrapper">
+				<img src="$site.asset('images/primer_presidente.avif').link()" alt="Primer presidente del Club Infantas" class="about__image-placeholder carousel__img">
+				<figcaption class="about__caption">Rosso L. Mantilla, el primer presidente.</figcaption>
+			</figure>
 			<div class="about__body">
 				<h2 class="heading body-text__title">Nuestra historia</h2>
 				<div class="body-text__content">

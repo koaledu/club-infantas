@@ -639,6 +639,18 @@ html {
   color: light-dark(var(--slate-600), var(--slate-300));
 }
 
+figure.about__image-wrapper {
+  flex-direction: column;
+  margin: 0;
+}
+
+.about__caption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: light-dark(var(--slate-600), var(--slate-300));
+}
+
 .about__body {
   padding: 2rem;
 }
