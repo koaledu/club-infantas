@@ -78,8 +78,8 @@
 
 :root {
   --clr-yellow: oklch(0.7821 0.1595 113.2);
-  --clr-green: oklch(0.6846 0.1087 166.6);
-  --clr-emerald: oklch(0.5214 0.0965 173.1);
+  --clr-green: light-dark(oklch(0.6846 0.1087 166.6), oklch(0.76 0.1087 166.6));
+  --clr-emerald: light-dark(oklch(0.5214 0.0965 173.1), oklch(0.78 0.0965 173.1));
   --clr-sky: oklch(0.6366 0.1321 244.4);
   --clr-blue: oklch(0.4618 0.1456 255.0);
 }
@@ -774,7 +774,7 @@ figure.about__image-wrapper {
   aspect-ratio: 3 / 4;
   width: 100%;
   height: auto;
-  max-width: 21rem;
+  max-width: 18rem;
   max-height: 450px;
   object-fit: cover;
   border-radius: var(--radius);
@@ -1067,7 +1067,7 @@ figure.about__image-wrapper {
 
 @media (prefers-color-scheme: dark) {
   .btn::before {
-    background: linear-gradient(135deg, var(--clr-green), var(--clr-sky));
+    background: linear-gradient(135deg, var(--clr-yellow), var(--clr-green));
   }
 
   .btn:hover,
