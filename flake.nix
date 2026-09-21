@@ -28,8 +28,6 @@
       devShells."${system}".default =
         let
           shell-pkgs = with pkgs; [
-            deno
-            just
             reuse
             superhtml
             zine
