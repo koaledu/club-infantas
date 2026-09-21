@@ -476,7 +476,7 @@ html {
   padding: 3rem 2rem 4.5rem;
 }
 
-.carousel__content--bg {
+.carousel__content--fade {
   background: linear-gradient(180deg, color-mix(in oklch, var(--slate-950) 15%, transparent), color-mix(in oklch, var(--slate-950) 55%, transparent));
   backdrop-filter: blur(1px);
 }

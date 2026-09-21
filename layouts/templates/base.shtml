@@ -5,10 +5,6 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="description" content="">
 		<title :text="$page.title"></title>
-		<link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
 		<link rel="stylesheet" href="$site.asset('styles/normalize.css').link()">
 		<link rel="stylesheet" href="$site.asset('styles/style.css').link()">
 		<link rel="preload" href="$site.asset('fonts/Rubik-400.woff2').link()" as="font" type="font/woff2" crossorigin>
