@@ -7,7 +7,7 @@
 <body id="body">
 	<!-- Carrusel -->
 	<section class="carousel" aria-label="Destacados del club">
-		<input type="radio" name="carousel-nav" id="carousel-nav-1" class="carousel__nav-input" checked>
+		<input type="radio" name="carousel-nav" id="carousel-nav-1" class="carousel__nav-input">
 		<input type="radio" name="carousel-nav" id="carousel-nav-2" class="carousel__nav-input">
 		<input type="radio" name="carousel-nav" id="carousel-nav-3" class="carousel__nav-input">
 
