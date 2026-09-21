@@ -32,6 +32,15 @@
 						<img src="$site.asset('images/slide3.avif').link()" alt="Eventos y Salones" class="carousel__img">
 					</div>
 				</li>
+				<li class="carousel__slide" aria-hidden="true">
+					<div class="carousel__slide-inner">
+						<img src="$site.asset('images/slide1.avif').link()" alt="" class="carousel__img">
+						<div class="carousel__content carousel__content--fade">
+							<h2 class="carousel__title">Bienvenido al Club Infantas</h2>
+							<p class="carousel__text">Tu espacio de deporte, recreación y comunidad.</p>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 

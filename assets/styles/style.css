@@ -428,19 +428,15 @@ html {
 
 .carousel__track {
   display: flex;
-  width: 300%;
+  width: 400%;
   margin: 0;
   padding: 0;
   list-style: none;
   animation: carousel-autoscroll 15s infinite;
 }
 
-.carousel:hover :is(.carousel__track, .carousel__dot) {
-  animation-play-state: paused;
-}
-
 .carousel__slide {
-  flex: 0 0 33.3333%;
+  flex: 0 0 25%;
   min-width: 0;
   display: block;
 }
@@ -528,12 +524,12 @@ html {
 
 .carousel__nav-input:nth-of-type(2):checked ~ .carousel__viewport .carousel__track {
   animation: none;
-  transform: translateX(-33.3333%);
+  transform: translateX(-25%);
 }
 
 .carousel__nav-input:nth-of-type(3):checked ~ .carousel__viewport .carousel__track {
   animation: none;
-  transform: translateX(-66.6666%);
+  transform: translateX(-50%);
 }
 
 .carousel__nav-input:nth-of-type(1):checked ~ .carousel__pagination .carousel__dot:nth-of-type(1),
@@ -614,9 +610,9 @@ html {
 
 @keyframes carousel-autoscroll {
   0%, 28% { transform: translateX(0); }
-  33.33%, 61% { transform: translateX(-33.3333%); }
-  66.66%, 94% { transform: translateX(-66.6666%); }
-  100% { transform: translateX(0); }
+  33.33%, 61% { transform: translateX(-25%); }
+  66.66%, 94% { transform: translateX(-50%); }
+  100% { transform: translateX(-75%); }
 }
 
 @media (prefers-reduced-motion: reduce) {
