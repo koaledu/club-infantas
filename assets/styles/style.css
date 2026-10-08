@@ -1077,7 +1077,7 @@ figure.about__image-wrapper {
   content: "";
   position: absolute;
   top: 1.5rem;
-  left: calc(-1.75rem + 0.5rem - 7px);
+  left: calc(-1.75rem + 0.5rem - 9px);
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -1105,6 +1105,20 @@ figure.about__image-wrapper {
 
 .timeline__text {
   margin: 0;
+}
+
+/* Docs — download list (Régimen, Estatutos) */
+.docs__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.docs__btn {
+  margin-top: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
