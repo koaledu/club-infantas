@@ -18,6 +18,46 @@
 			</div>
 		</div>
 		</section>
+		<section class="timeline" aria-labelledby="timeline-title">
+			<h2 id="timeline-title" class="heading body-text__title">Nuestra línea de tiempo</h2>
+			<ol class="timeline__list">
+				<li class="timeline__item">
+					<span class="timeline__date">Fundación</span>
+					<h3 class="timeline__title">Nace el Club Infantas</h3>
+					<p class="timeline__text">Fundado por Rosso L. Mantilla, nuestro primer presidente, junto a los trabajadores activos y pensionados de Ecopetrol S.A.</p>
+				</li>
+				<li class="timeline__item">
+					<span class="timeline__date">1994</span>
+					<h3 class="timeline__title">Sede del Mundial de Patinaje</h3>
+					<p class="timeline__text">Nuestro patinódromo José Rosso Mantilla recibe el Mundial de Patinaje.</p>
+				</li>
+				<li class="timeline__item">
+					<span class="timeline__date">1996</span>
+					<h3 class="timeline__title">Remodelación del área social</h3>
+					<p class="timeline__text">En la gerencia de Edgar Lozano Jaimes y la presidencia de Miguel Sampayo se remodela el área social con estilo romano. Se inauguran los kioscos Casabe, Coporo y Samoré, los salones Orito, Cirama, Samoré, Cusiana y la sala de pintura.</p>
+				</li>
+				<li class="timeline__item">
+					<span class="timeline__date">2000</span>
+					<h3 class="timeline__title">Mundial de Patinaje, segunda vez</h3>
+					<p class="timeline__text">El patinódromo vuelve a ser sede del Mundial de Patinaje.</p>
+				</li>
+				<li class="timeline__item">
+					<span class="timeline__date">2001</span>
+					<h3 class="timeline__title">Ampliación del kiosco Samoré</h3>
+					<p class="timeline__text">En la gerencia de Jorge Barreto Daniels y la presidencia de Jorge Montaño se remodela y amplía el kiosco Samoré de la zona deportiva.</p>
+				</li>
+				<li class="timeline__item">
+					<span class="timeline__date">2003</span>
+					<h3 class="timeline__title">Nuevo estadio de sóftbol</h3>
+					<p class="timeline__text">En la presidencia de Edilberto Mejía se inaugura el nuevo estadio de sóftbol del Club.</p>
+				</li>
+				<li class="timeline__item">
+					<span class="timeline__date">Hoy</span>
+					<h3 class="timeline__title">El mejor club del oriente colombiano</h3>
+					<p class="timeline__text">Nos consolidamos como el mejor club social y deportivo de la ciudad y todo el oriente colombiano, con canchas, piscinas, patinódromo mundialista y espacios para 1&#8239;500 personas.</p>
+				</li>
+			</ol>
+		</section>
 		<section class="news">
 			<div class="news__grid">
 			<article class="news-card">
