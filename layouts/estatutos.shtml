@@ -31,8 +31,8 @@
 						<h3 class="news-card__title">Propuestas de reforma de estatutos 2023</h3>
 						<p class="news-card__text">Aspectos más relevantes a reformar, presentados a la asamblea extraordinaria. PDF, 370&nbsp;KB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/estatutos/propuestas-estatutos-2023.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/estatutos/propuestas-estatutos-2023.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/estatutos/propuestas-estatutos-2023.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/estatutos/propuestas-estatutos-2023.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>

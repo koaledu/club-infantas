@@ -27,8 +27,8 @@
 						<h3 class="news-card__title">Informe financiero 2025</h3>
 						<p class="news-card__text">Informe financiero y de gestión del último ejercicio. PDF, 1,1&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2025.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2025.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2025.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2025.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>
@@ -39,8 +39,8 @@
 						<h3 class="news-card__title">Informe de gestión 2024</h3>
 						<p class="news-card__text">Gestión administrativa, financiera y social del año 2024. PDF, 1,1&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2024.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2024.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2024.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2024.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>
@@ -51,8 +51,8 @@
 						<h3 class="news-card__title">Informe de gestión 2023</h3>
 						<p class="news-card__text">Portafolio e informe anual del Club. PDF, 14,2&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2023.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2023.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2023.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2023.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>
@@ -63,8 +63,8 @@
 						<h3 class="news-card__title">Informe de gestión 2022 con dictamen</h3>
 						<p class="news-card__text">Informe anual con dictamen del revisor fiscal. PDF, 5,7&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2022.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2022.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2022.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2022.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>
@@ -75,8 +75,8 @@
 						<h3 class="news-card__title">Estados financieros 2021</h3>
 						<p class="news-card__text">Estados financieros del ejercicio 2021. PDF, 6,7&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2021.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2021.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2021.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2021.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>
@@ -87,8 +87,8 @@
 						<h3 class="news-card__title">Informe de gestión 2020</h3>
 						<p class="news-card__text">Informe anual del año 2020. PDF, 16,6&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2020.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2020.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2020.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2020.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>
@@ -99,8 +99,8 @@
 						<h3 class="news-card__title">Informe de gestión 2019</h3>
 						<p class="news-card__text">Informe anual del año 2019. PDF, 9,3&nbsp;MB.</p>
 						<p class="docs__actions">
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2019.pdf').link()" target="_blank" rel="noopener">Ver</a>
-							<a class="btn docs__btn" href="$site.asset('documentos/regimen/informe-de-gestion-2019.pdf').link()" download>Descargar</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2019.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2019.pdf').link()" download>Descargar</a>
 						</p>
 					</div>
 				</article>

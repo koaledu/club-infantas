@@ -2,8 +2,8 @@
 
 ## PDFs de Régimen Tributario — autoalojados en el repo (ignorados por git)
 
-Los PDFs se sirven desde `assets/documentos/regimen/` mediante `$site.asset(...).link()` en `layouts/regimen.shtml`.
-Están en `.gitignore` (`/assets/documentos/`): no se suben al repo, cada despliegue debe proveerlos (copiar desde `Descargas/regimen-tributario/` o descargarlos según abajo).
+Los PDFs se sirven desde `assets/documents/regimen/` mediante `$site.asset(...).link()` en `layouts/regimen.shtml`.
+Están en `.gitignore` (`/assets/documents/`): no se suben al repo, cada despliegue debe proveerlos (copiar desde `Descargas/regimen-tributario/` o descargarlos según abajo).
 
 ### Convención de nombres
 
@@ -21,8 +21,8 @@ Solo minúsculas + guiones, en una sola carpeta:
 
 - Total ~330 MB; 2019 (122 MB) y 2020 (147 MB) superan el límite de 100 MB por archivo de GitHub — comprimir primero (meta < 50 MB cada uno, ideal < 10 MB).
 - 2023 (~37 MB) y 2021 (~16 MB) también deberían comprimirse.
-- Tras comprimir, descargar desde WordPress con los nombres de arriba a `assets/documentos/regimen/` y actualizar los 14 enlaces en `layouts/regimen.shtml`.
+- Tras comprimir, descargar desde WordPress con los nombres de arriba a `assets/documents/regimen/` y actualizar los 14 enlaces en `layouts/regimen.shtml`.
 
 ## PDFs de Estatutos — autoalojados en el repo (ignorados por git)
 
-Servidos desde `assets/documentos/estatutos/` mediante `$site.asset(...).link()` en `layouts/estatutos.shtml`. Misma convención: minúsculas + guiones (`propuestas-estatutos-2023.pdf`, 370 KB, ya optimizado).
+Servidos desde `assets/documents/estatutos/` mediante `$site.asset(...).link()` en `layouts/estatutos.shtml`. Misma convención: minúsculas + guiones (`propuestas-estatutos-2023.pdf`, 370 KB, ya optimizado).
