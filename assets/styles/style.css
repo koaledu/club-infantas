@@ -788,6 +788,13 @@ figure.about__image-wrapper {
   border: 1px solid light-dark(var(--slate-200), var(--slate-700));
 }
 
+/* Full-document images (flyers, summons): no cropping. */
+.body-text .about__image-placeholder--document {
+  aspect-ratio: auto;
+  object-fit: contain;
+  max-height: none;
+}
+
 .body-text .about__caption {
   display: inline-block;
   margin-top: 0.75rem;

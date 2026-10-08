@@ -2,7 +2,7 @@
 <head id="head"></head>
 <body id="body">
 	<div class="container body-text">
-		<h1 class="heading">Régimen Tributario</h1>
+		<h1 class="heading">Régimen tributario</h1>
 
 		<section class="about">
 			<div class="about__card">

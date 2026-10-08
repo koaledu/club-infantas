@@ -1,6 +1,43 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
-	<h1 class="heading">Estatutos</h1>
-	<p>Contenido de Estatutos.</p>
+	<div class="container body-text">
+		<h1 class="heading">Reforma de estatutos</h1>
+
+		<section class="about">
+			<div class="about__card">
+			<figure class="about__image-wrapper">
+				<img src="$site.asset('images/convocatoria-asamblea-2023.avif').link()" alt="Convocatoria a asamblea extraordinaria de afiliados del 07 de octubre de 2023" class="about__image-placeholder about__image-placeholder--document carousel__img">
+				<figcaption class="about__caption">Convocatoria a la asamblea extraordinaria de 2023.</figcaption>
+			</figure>
+			<div class="about__body">
+					<h2 class="heading body-text__title">Así se reforman nuestros estatutos</h2>
+					<div class="body-text__content">
+						<p>Los estatutos del Club Infantas solo pueden reformarse por decisión de la asamblea de afiliados. Cuando hay una reforma en curso, aquí se publica la convocatoria y el documento con los aspectos a reformar.</p>
+						<p>La última reforma se llevó a asamblea extraordinaria el 07 de octubre de 2023. Las propuestas se recibieron de forma presencial en la oficina de Gerencia y por correo a sec.gerencia@clubinfantas.com. Mayores informes al 3108818388.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="news" aria-labelledby="docs-title">
+			<h2 id="docs-title" class="heading news__heading">Documentos para descarga</h2>
+			<p>El botón <strong>Ver</strong> abre el PDF en una pestaña nueva, <strong>Descargar</strong> lo guarda en tu dispositivo.</p>
+			<div class="news__grid docs__grid">
+
+				<article class="news-card">
+					<div class="news-card__body">
+						<span class="news-card__date">2023</span>
+						<h3 class="news-card__title">Propuestas de reforma de estatutos 2023</h3>
+						<p class="news-card__text">Aspectos más relevantes a reformar, presentados a la asamblea extraordinaria. PDF, 370&nbsp;KB.</p>
+						<p class="docs__actions">
+							<a class="btn docs__btn" href="$site.asset('documentos/estatutos/propuestas-estatutos-2023.pdf').link()" target="_blank" rel="noopener">Ver</a>
+							<a class="btn docs__btn" href="$site.asset('documentos/estatutos/propuestas-estatutos-2023.pdf').link()" download>Descargar</a>
+						</p>
+					</div>
+				</article>
+
+			</div>
+		</section>
+	</div>
 </body>
