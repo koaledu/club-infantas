@@ -79,6 +79,10 @@
   --clr-emerald: light-dark(oklch(0.5214 0.0965 173.1), oklch(0.78 0.0965 173.1));
   --clr-sky: oklch(0.6366 0.1321 244.4);
   --clr-blue: oklch(0.4618 0.1456 255.0);
+  --clr-orange: oklch(0.7049 0.1867 47.6);
+  --clr-violet: oklch(0.6056 0.2189 292.7);
+  --clr-rose: oklch(0.6454 0.2462 14.4);
+  --clr-cyan: light-dark(oklch(0.6092 0.1261 221.7), oklch(0.7893 0.1544 211.8));
   --slate-50: oklch(0.984 0.003 247.858);
   --slate-100: oklch(0.968 0.007 247.896);
   --slate-200: oklch(0.929 0.013 255.508);
@@ -112,7 +116,9 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1248px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -747,6 +753,9 @@ figure.about__image-wrapper {
   border-radius: var(--radius);
   overflow: hidden;
   background: light-dark(var(--slate-100), var(--slate-800));
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .news-card__image-placeholder {
@@ -761,10 +770,15 @@ figure.about__image-wrapper {
 
 .news-card__body {
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .news-card__date {
   display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
   padding: 0.3rem 0.8rem;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
@@ -855,29 +869,45 @@ figure.about__image-wrapper {
   font-size: 1.125rem;
 }
 
+.page-lead {
+  max-width: 65ch;
+  font-size: 1.125rem;
+  margin: 0 0 2.5rem;
+  text-wrap: pretty;
+}
+
 .body-text .news-card {
   position: relative;
 }
 
 .body-text .news-card::before {
+  display: none;
+}
+
+.mission-vision-section .news-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--clr-yellow), var(--clr-green), var(--clr-sky));
+  display: block;
 }
 
-.body-text .news-card:nth-child(1)::before {
+/* Keep the three pillars in one row as soon as they fit */
+.mission-vision-section .news__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+
+.mission-vision-section .news-card:nth-child(1)::before {
   background: linear-gradient(90deg, var(--clr-yellow), var(--clr-green));
 }
 
-.body-text .news-card:nth-child(2)::before {
+.mission-vision-section .news-card:nth-child(2)::before {
   background: linear-gradient(90deg, var(--clr-green), var(--clr-emerald), var(--clr-sky));
 }
 
-.body-text .news-card:nth-child(3)::before {
+.mission-vision-section .news-card:nth-child(3)::before {
   background: linear-gradient(90deg, var(--clr-sky), var(--clr-blue));
 }
 
@@ -1097,16 +1127,48 @@ figure.about__image-wrapper {
   margin: 0;
 }
 
+/* Timeline: heading on the left, list on the right */
+.timeline__intro {
+  margin: 0;
+  max-width: 34ch;
+  color: light-dark(var(--slate-600), var(--slate-300));
+}
+
+@media (min-width: 860px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: minmax(11rem, 1fr) minmax(0, 68ch);
+    gap: 0 3rem;
+    align-items: start;
+  }
+
+  .timeline__aside {
+    position: sticky;
+    top: 6rem;
+  }
+
+  .timeline__aside .body-text__title {
+    margin-top: 0;
+  }
+
+  .timeline__list {
+    max-width: none;
+    margin-top: 0;
+  }
+}
+
 /* Docs — download list (Régimen, Estatutos) */
 .docs__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin: 1rem 0 0;
+  margin: auto 0 0;
+  padding-top: 0.75rem;
 }
 
 .docs__btn {
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
 }
@@ -1117,4 +1179,300 @@ figure.about__image-wrapper {
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
   }
+}
+
+/* Escuelas — schools grid */
+.schools-intro {
+  max-width: 65ch;
+  font-size: 1.125rem;
+  margin: 0 0 3rem;
+}
+
+.schools {
+  margin-bottom: 4rem;
+}
+
+.schools__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.school-card {
+  --accent: var(--clr-emerald);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid light-dark(var(--slate-200), var(--slate-700));
+  border-radius: var(--radius);
+  background: light-dark(var(--slate-100), var(--slate-800));
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.school-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in oklch, var(--accent) 55%, transparent);
+}
+
+.school-card__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.5rem;
+  color: color-mix(in oklch, var(--accent) 82%, white);
+  background:
+    radial-gradient(120% 140% at 20% 0%, color-mix(in oklch, var(--accent) 38%, transparent), transparent 65%),
+    linear-gradient(135deg, var(--slate-900), var(--slate-950));
+}
+
+.school-card__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.school-card__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.25rem;
+}
+
+.school-card__kicker {
+  align-self: flex-start;
+  padding: 0.15rem 0.6rem;
+  font-family: var(--ff-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid color-mix(in oklch, var(--accent) 55%, transparent);
+  border-radius: 999px;
+}
+
+.school-card__title {
+  margin: 0.6rem 0 0.4rem;
+  font-family: var(--ff-display);
+  font-size: 1.15rem;
+}
+
+.school-card__text {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+}
+
+.school-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: light-dark(var(--slate-700), var(--slate-300));
+}
+
+.school-card__list li + li {
+  margin-top: 0.2rem;
+}
+
+.school-card__list li::marker {
+  color: var(--accent);
+}
+
+/* CTA band */
+.cta-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.75rem;
+  margin-bottom: 4rem;
+  border: 1px solid color-mix(in oklch, var(--clr-emerald) 40%, transparent);
+  border-radius: var(--radius);
+  background: light-dark(color-mix(in oklch, var(--clr-emerald) 10%, var(--slate-100)), color-mix(in oklch, var(--clr-emerald) 22%, var(--slate-900)));
+}
+
+.cta-band__title {
+  margin: 0 0 0.35rem;
+  font-family: var(--ff-display);
+  font-size: 1.25rem;
+}
+
+.cta-band__text {
+  margin: 0;
+  max-width: 52ch;
+  font-size: 0.95rem;
+}
+
+.cta-band__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cta-band__actions .btn {
+  margin-top: 0;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: light-dark(var(--slate-800), var(--slate-100));
+  border-color: color-mix(in oklch, var(--clr-emerald) 55%, transparent);
+  box-shadow: none;
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
+  background: color-mix(in oklch, var(--clr-emerald) 14%, transparent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .school-card,
+  .convenio-card {
+    animation: rise-in linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }
+}
+
+/* Convenios — clubes y lugares aliados */
+.convenios {
+  margin-bottom: 4rem;
+}
+
+.convenios__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.convenios__head .body-text__title {
+  margin: 0;
+}
+
+.convenios__tag {
+  padding: 0.15rem 0.65rem;
+  font-family: var(--ff-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  color: var(--clr-emerald);
+  border: 1px solid color-mix(in oklch, var(--clr-emerald) 50%, transparent);
+  background: color-mix(in oklch, var(--clr-emerald) 12%, transparent);
+}
+
+.convenios__tag--discount {
+  color: light-dark(oklch(0.55 0.16 47.6), var(--clr-orange));
+  border-color: color-mix(in oklch, var(--clr-orange) 50%, transparent);
+  background: color-mix(in oklch, var(--clr-orange) 14%, transparent);
+}
+
+.convenios__intro {
+  max-width: 65ch;
+  margin: 0.6rem 0 1.75rem;
+  color: light-dark(var(--slate-600), var(--slate-300));
+}
+
+.convenios__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.convenio-card {
+  --accent: var(--clr-emerald);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid light-dark(var(--slate-200), var(--slate-700));
+  border-radius: var(--radius);
+  background: light-dark(var(--slate-100), var(--slate-800));
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.convenio-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in oklch, var(--accent) 55%, transparent);
+}
+
+.convenio-card__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.5rem;
+  color: color-mix(in oklch, var(--accent) 85%, white);
+  background:
+    radial-gradient(120% 140% at 20% 0%, color-mix(in oklch, var(--accent) 38%, transparent), transparent 65%),
+    linear-gradient(135deg, var(--slate-900), var(--slate-950));
+}
+
+.convenio-card__icon {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.convenio-card__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.convenio-card__kicker {
+  font-family: var(--ff-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: light-dark(var(--slate-600), var(--slate-400));
+}
+
+.convenio-card__title {
+  margin: 0.15rem 0 0.35rem;
+  font-family: var(--ff-display);
+  font-size: 1.2rem;
+}
+
+.convenio-card__place {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.925rem;
+  color: light-dark(var(--slate-600), var(--slate-300));
+}
+
+.convenio-card__pin {
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.15rem;
+  opacity: 0.75;
+}
+
+.convenio-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.1rem;
+}
+
+.convenio-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.82rem;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.convenio-card__btn-icon {
+  flex: none;
+  width: 0.95rem;
+  height: 0.95rem;
 }

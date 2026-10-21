@@ -1,6 +1,201 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
-	<h1 class="heading">Escuelas</h1>
-	<p>Contenido de Escuelas.</p>
+	<div class="container body-text">
+		<h1 class="heading">Escuelas</h1>
+
+		<p class="schools-intro">Las escuelas del Club Infantas son el espacio donde el deporte y la música se vuelven hábito. Aquí encuentras las ocho disciplinas que acompañamos con instructores, grupos por edad y un plan de formación pensado para disfrutar el proceso, competir cuando sea el momento y crecer en comunidad.</p>
+
+		<section class="schools" aria-labelledby="schools-title">
+			<h2 id="schools-title" class="heading body-text__title">Nuestras escuelas</h2>
+			<div class="schools__grid">
+
+				<article class="school-card" style="--accent: var(--clr-yellow)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M9.4 17.6V5.6l8.5-2.2v11.9"/>
+							<ellipse cx="6.8" cy="17.6" rx="2.6" ry="2.2" fill="currentColor" stroke="none"/>
+							<ellipse cx="15.3" cy="15.3" rx="2.6" ry="2.2" fill="currentColor" stroke="none"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela musical</span>
+						<h3 class="school-card__title">Vallenato</h3>
+						<p class="school-card__text">El vallenato es la banda sonora del Caribe colombiano. Aquí aprendemos sus aires, sus historias y el gusto de tocar en conjunto.</p>
+						<ul class="school-card__list">
+							<li>Acordeón, caja y guacharaca</li>
+							<li>Ritmo, oído y lectura musical</li>
+							<li>Ensayos y presentaciones en grupo</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-green)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="12" cy="12" r="9"/>
+							<path d="M5.2 6.4c4.2 3 4.2 8.2 0 11.2"/>
+							<path d="M18.8 6.4c-4.2 3-4.2 8.2 0 11.2"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Tenis</h3>
+						<p class="school-card__text">De la primera raqueta al partido completo: técnica, desplazamiento y estrategia en las canchas del club.</p>
+						<ul class="school-card__list">
+							<li>Golpes de fondo, saque y volea</li>
+							<li>Coordinación y desplazamiento</li>
+							<li>Juego y competencia por niveles</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-orange)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="12" cy="12" r="9"/>
+							<path d="M12 3v18"/>
+							<path d="M5.6 5.6c3.8 3.4 3.8 9.4 0 12.8"/>
+							<path d="M18.4 5.6c-3.8 3.4-3.8 9.4 0 12.8"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Baloncesto</h3>
+						<p class="school-card__text">Un deporte de ritmo, lectura y equipo. Formamos jugadores que entienden el juego y disfrutan la cancha.</p>
+						<ul class="school-card__list">
+							<li>Manejo de balón, pase y tiro</li>
+							<li>Defensa y transición</li>
+							<li>Fundamentos tácticos de equipo</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-blue)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="7.6" cy="4.2" r="2"/>
+							<path d="M8.2 6.2L10.6 11"/>
+							<path d="M10.6 11L16 8 20.8 6.6"/>
+							<path d="M10.6 11L9.8 15.6 11.6 19"/>
+							<path d="M9.4 8.6L6 9.6"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Taekwondo</h3>
+						<p class="school-card__text">Disciplina marcial con énfasis en el respeto, la concentración y la constancia. Cada grado se gana con trabajo.</p>
+						<ul class="school-card__list">
+							<li>Técnicas de pierna y mano</li>
+							<li>Flexibilidad y condición física</li>
+							<li>Valores y grados (cinturones)</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-rose)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="12" cy="12" r="9"/>
+							<path d="M6.8 4.8c3.2 4.2 3.2 10.4 0 14.4"/>
+							<path d="M17.2 4.8c-3.2 4.2-3.2 10.4 0 14.4"/>
+							<path d="M7.9 6.6l1.7 1M6.9 9.8l1.8.5M6.9 13l1.8-.2M7.6 16.1l1.6-.7"/>
+							<path d="M16.1 6.6l-1.7 1M17.1 9.8l-1.8.5M17.1 13l-1.8-.2M16.4 16.1l-1.6-.7"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Sóftbol</h3>
+						<p class="school-card__text">Bateo, lanzamiento y estrategia en el diamante del club. Un deporte donde cada jugada depende del equipo.</p>
+						<ul class="school-card__list">
+							<li>Bateo, lanzamiento y recepción</li>
+							<li>Corrido de bases y fildeo</li>
+							<li>Estrategia y juego en equipo</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-violet)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M3.1 17.3v-3c0-.4.2-.7.5-1L11.8 6h2.5l2 1.9c.3.3.5.8.5 1.2v8.2"/>
+							<path d="M3 17.2h14.9"/>
+							<path d="M7.6 9.2l2.6 2.2"/>
+							<circle cx="5.4" cy="19" r="1.5"/>
+							<circle cx="8.9" cy="19" r="1.5"/>
+							<circle cx="12.4" cy="19" r="1.5"/>
+							<circle cx="15.9" cy="19" r="1.5"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Patinaje</h3>
+						<p class="school-card__text">Sobre ruedas se aprende equilibrio, técnica y seguridad. Entrenamos en el patinódromo José Rosso Mantilla, sede de dos mundiales.</p>
+						<ul class="school-card__list">
+							<li>Postura, empuje y frenado</li>
+							<li>Equilibrio y coordinación</li>
+							<li>Resistencia y seguridad</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-cyan)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="8.6" cy="10.2" r="2.2"/>
+							<path d="M9.8 9L14 6.2 18.8 7.2"/>
+							<path d="M2.5 14q2.9-3 5.8 0t5.8 0t5.8 0"/>
+							<path d="M2.5 18.6q2.9-3 5.8 0t5.8 0t5.8 0"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Natación</h3>
+						<p class="school-card__text">En la piscina del club aprendemos a nadar con confianza, técnica y respeto por el agua.</p>
+						<ul class="school-card__list">
+							<li>Adaptación y flotación</li>
+							<li>Estilos libre, pecho y espalda</li>
+							<li>Resistencia y seguridad acuática</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="school-card" style="--accent: var(--clr-emerald)">
+					<div class="school-card__banner">
+						<svg class="school-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<circle cx="12" cy="12" r="9"/>
+							<path d="M12 8.2l3.6 2.6-1.4 4.3H9.8l-1.4-4.3z"/>
+							<path d="M12 8.2V3"/>
+							<path d="M15.6 10.8l4.9-1.6"/>
+							<path d="M14.2 15.1l3 4.2"/>
+							<path d="M9.8 15.1l-3 4.2"/>
+							<path d="M8.4 10.8L3.5 9.2"/>
+						</svg>
+					</div>
+					<div class="school-card__body">
+						<span class="school-card__kicker">Escuela deportiva</span>
+						<h3 class="school-card__title">Fútbol</h3>
+						<p class="school-card__text">Formación desde la base con foco en técnica, actitud y juego colectivo.</p>
+						<ul class="school-card__list">
+							<li>Control, pase y remate</li>
+							<li>Táctica y lectura del juego</li>
+							<li>Actitud y trabajo en equipo</li>
+						</ul>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<section class="cta-band" aria-labelledby="cta-title">
+			<div>
+				<h2 id="cta-title" class="cta-band__title">¿Quieres empezar?</h2>
+				<p class="cta-band__text">Escríbenos y te ayudamos a elegir la escuela, el grupo y el horario que mejor se ajusten a tu familia.</p>
+			</div>
+			<div class="cta-band__actions">
+				<a class="btn" href="mailto:servicioalcliente@clubinfantas.com">Escríbenos</a>
+				<a class="btn btn--ghost" href="$site.page('afiliaciones').link()">Ver afiliaciones</a>
+			</div>
+		</section>
+	</div>
 </body>

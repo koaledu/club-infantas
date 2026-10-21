@@ -3,23 +3,28 @@
 <body id="body">
 	<div class="container body-text">
 		<h1 class="heading">Nosotros</h1>
+		<p class="page-lead">Más de setenta años de historia, deporte y comunidad en el corazón de Barrancabermeja.</p>
+
 		<section class="about">
 			<div class="about__card">
-			<figure class="about__image-wrapper">
-				<img src="$site.asset('images/primer_presidente.avif').link()" alt="Primer presidente del Club Infantas" class="about__image-placeholder carousel__img">
-				<figcaption class="about__caption">Rosso L. Mantilla, el primer presidente.</figcaption>
-			</figure>
-			<div class="about__body">
-				<h2 class="heading body-text__title">Nuestra historia</h2>
-				<div class="body-text__content">
-					<p>Fundado por Rosso L. Mantilla, el club nació junto a Barrancabermeja y a todas las generaciones que han acompañado al municipio.</p>
-					<p>Hemos construido un legado con los recuerdos de miles de personas en el pasado que busca estar en los recuerdos de miles más en el futuro.</p>
+				<figure class="about__image-wrapper">
+					<img src="$site.asset('images/primer_presidente.avif').link()" alt="Primer presidente del Club Infantas" class="about__image-placeholder carousel__img">
+					<figcaption class="about__caption">Rosso L. Mantilla, el primer presidente.</figcaption>
+				</figure>
+				<div class="about__body">
+					<h2 class="heading body-text__title">Nuestra historia</h2>
+					<div class="body-text__content">
+						<p>Fundado por Rosso L. Mantilla, el club nació junto a Barrancabermeja y a todas las generaciones que han acompañado al municipio.</p>
+						<p>Hemos construido un legado con los recuerdos de miles de personas del pasado, y trabajamos para estar en los recuerdos de miles más en el futuro.</p>
+					</div>
 				</div>
 			</div>
-		</div>
 		</section>
 		<section class="timeline" aria-labelledby="timeline-title">
-			<h2 id="timeline-title" class="heading body-text__title">Nuestra línea de tiempo</h2>
+			<div class="timeline__aside">
+				<h2 id="timeline-title" class="heading body-text__title">Nuestra línea de tiempo</h2>
+				<p class="timeline__intro">Siete hitos que construyeron el club que somos hoy.</p>
+			</div>
 			<ol class="timeline__list">
 				<li class="timeline__item">
 					<span class="timeline__date">Fundación</span>
@@ -58,27 +63,28 @@
 				</li>
 			</ol>
 		</section>
-		<section class="news">
+		<section class="news mission-vision-section" aria-labelledby="esencia-title">
+			<h2 id="esencia-title" class="heading body-text__title">Misión, visión y compromiso</h2>
 			<div class="news__grid">
-			<article class="news-card">
-				<div class="news-card__body">
-					<h3 class="news-card__title">Nuestra misión</h3>
-					<p class="news-card__text">Brindar experiencias que busquen promover el bienestar para todos aquellos que estén en el club. Afiliados, clientes, sus familias e sus invitados.</p>
-				</div>
-			</article>
-			<article class="news-card">
-				<div class="news-card__body">
-					<h3 class="news-card__title">Nuestra visión</h3>
-					<p class="news-card__text">Ser la mejor opción para servicios sociales, culturales y deportivos, contribuyendo al bienestar y la calidad de vida de nuestra comunidad.</p>
-				</div>
-			</article>
-			<article class="news-card">
-				<div class="news-card__body">
-					<h3 class="news-card__title">Nuestro compromiso</h3>
-					<p class="news-card__text">Trabajamos para que cada visita, actividad y evento sea una experiencia positiva para todos.</p>
-				</div>
-			</article>
-		</div>
+				<article class="news-card">
+					<div class="news-card__body">
+						<h3 class="news-card__title">Nuestra misión</h3>
+						<p class="news-card__text">Brindar experiencias que promuevan el bienestar de todos los que hacen parte del club: afiliados, clientes, sus familias y sus invitados.</p>
+					</div>
+				</article>
+				<article class="news-card">
+					<div class="news-card__body">
+						<h3 class="news-card__title">Nuestra visión</h3>
+						<p class="news-card__text">Ser la mejor opción para servicios sociales, culturales y deportivos, contribuyendo al bienestar y la calidad de vida de nuestra comunidad.</p>
+					</div>
+				</article>
+				<article class="news-card">
+					<div class="news-card__body">
+						<h3 class="news-card__title">Nuestro compromiso</h3>
+						<p class="news-card__text">Trabajamos para que cada visita, actividad y evento sea una experiencia positiva para todos.</p>
+					</div>
+				</article>
+			</div>
 		</section>
 	</div>
 </body>
