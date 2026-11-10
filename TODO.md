@@ -1,7 +1,7 @@
 # TODO — Club Infantas
 
 > Prioridades: **P0** bloquea el lanzamiento · **P1** contenido por confirmar · **P2** pulido.
-> Marca `[x]` al terminar. Última verificación: 2026-11-10 · build limpio ✅ (9 páginas + alias 404, 8 PDFs, 0 enlaces rotos).
+> Marca `[x]` al terminar. Última verificación: 2026-11-10 · build limpio ✅ y producción ✅ (9 páginas + alias 404, 8 PDFs, todos los enlaces 200).
 
 **Listo para lanzar** = todos los P0 cerrados.
 
@@ -12,7 +12,7 @@
 | Build limpio + PDFs | ✅ | — |
 | Instalaciones / Afiliaciones | ❌ Placeholders | P0 |
 | Inicio | ❌ Imagen y noticias placeholder | P0 |
-| Dominio / despliegue | 🟡 GitHub Pages configurado, pendiente verificar | P0 |
+| Dominio / despliegue | ✅ Publicado en GitHub Pages | — |
 | SEO base | ✅ Descripciones y metadatos sociales | — |
 | Nosotros / Escuelas / Convenios | 🟡 Datos por confirmar | P1 |
 | Pulido | 🟡 Favicon, 404, etc. | P2 |
@@ -49,8 +49,8 @@
 - [x] `host_url` y `url_path_prefix` configurados en `zine.ziggy` para GitHub Pages.
 - [x] Publicación automática con Actions (`.github/workflows/build.yml`) en cada push a `main`.
 - [x] Flujo documentado en `README.md`.
-- [ ] Verificar producción tras el primer deploy: <https://koaledu.github.io/club-infantas/> (9 páginas + 8 PDFs).
-- [ ] Activar Pages una vez en **Settings → Pages → Source: GitHub Actions** (requiere acción manual del propietario).
+- [x] Verificado en producción: <https://koaledu.github.io/club-infantas/> (9 páginas, alias 404 y 8 PDFs responden 200).
+- [x] Pages activado en **Settings → Pages → Source: GitHub Actions**.
 
 ### 6. Metadatos base
 
@@ -100,9 +100,9 @@ python3 scripts/check_links.py public --prefix club-infantas
 
 El workflow `.github/workflows/build.yml` ejecuta estos pasos en cada push y PR.
 
-- [ ] 9 páginas y 8 PDFs en `public/`; sin enlaces internos rotos.
+- [x] 9 páginas y 8 PDFs en `public/`; sin enlaces internos rotos.
 - [ ] Revisar portada, menú móvil, carrusel y descargas en un navegador real.
-- [ ] Probar producción tras desplegar.
+- [x] Producción verificada tras desplegar (todas las rutas y PDFs responden 200; 404 personalizado funciona).
 
 ## Hecho
 
@@ -119,3 +119,4 @@ El workflow `.github/workflows/build.yml` ejecuta estos pasos en cada push y PR.
 - [x] Fuentes itálicas sin uso eliminadas; solo quedan 4 pesos y 4 preloads.
 - [x] CI de build y checker de enlaces (`.github/workflows/build.yml`, `scripts/check_links.py`).
 - [x] Regla `.school-card__photo` añadida y `REUSE.toml` actualizado.
+- [x] Sitio publicado automáticamente en GitHub Pages con cada push a `main`.
