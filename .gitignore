@@ -1,6 +1,4 @@
 /public/
-# Local PDF staging (see TODO.md) — files live on WordPress, not in git.
-/assets/documents/
 
 # Binario local del túnel de Cloudflare (no versionar).
 /cloudflared
