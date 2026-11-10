@@ -1,7 +1,7 @@
 # TODO — Club Infantas
 
 > Prioridades: **P0** bloquea el lanzamiento · **P1** contenido por confirmar · **P2** pulido.
-> Marca `[x]` al terminar. Última verificación: 2026-11-10 · build limpio ✅ (8 páginas, 8 PDFs, 0 enlaces rotos).
+> Marca `[x]` al terminar. Última verificación: 2026-11-10 · build limpio ✅ (9 páginas + alias 404, 8 PDFs, 0 enlaces rotos).
 
 **Listo para lanzar** = todos los P0 cerrados.
 
@@ -12,7 +12,7 @@
 | Build limpio + PDFs | ✅ | — |
 | Instalaciones / Afiliaciones | ❌ Placeholders | P0 |
 | Inicio | ❌ Imagen y noticias placeholder | P0 |
-| Dominio / despliegue | ❌ Sin configurar | P0 |
+| Dominio / despliegue | 🟡 GitHub Pages configurado, pendiente verificar | P0 |
 | SEO base | ✅ Descripciones y metadatos sociales | — |
 | Nosotros / Escuelas / Convenios | 🟡 Datos por confirmar | P1 |
 | Pulido | 🟡 Favicon, 404, etc. | P2 |
@@ -46,9 +46,11 @@
 
 ### 5. Dominio y despliegue
 
-- [ ] `host_url` real en `zine.ziggy` (hoy `https://example.com`).
-- [ ] Elegir host y definir cómo se publica `public/` (manual o CI).
-- [ ] Documentar el flujo en `README.md` y verificar producción (8 páginas + 8 PDFs).
+- [x] `host_url` y `url_path_prefix` configurados en `zine.ziggy` para GitHub Pages.
+- [x] Publicación automática con Actions (`.github/workflows/build.yml`) en cada push a `main`.
+- [x] Flujo documentado en `README.md`.
+- [ ] Verificar producción tras el primer deploy: <https://koaledu.github.io/club-infantas/> (9 páginas + 8 PDFs).
+- [ ] Activar Pages una vez en **Settings → Pages → Source: GitHub Actions** (requiere acción manual del propietario).
 
 ### 6. Metadatos base
 
@@ -85,15 +87,15 @@
 ## Documentación
 
 - [x] Actualizar `README.md`: secciones reales, comandos de desarrollo y PDFs versionados.
-- [ ] Documentar el despliegue en `README.md` cuando esté definido.
+- [x] Documentar el despliegue en `README.md`.
 - [ ] Mantener este TODO al día.
 
 ## Verificación
 
 ```sh
-podman build -t club-infantas .
+podman build -f Containerfile -t club-infantas .
 podman run --rm -v "$PWD:/src:Z" club-infantas zine release
-python3 scripts/check_links.py public
+python3 scripts/check_links.py public --prefix club-infantas
 ```
 
 El workflow `.github/workflows/build.yml` ejecuta estos pasos en cada push y PR.

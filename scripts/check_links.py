@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import html
 import re
 import sys
@@ -25,13 +26,24 @@ def exists(root: Path, target: Path) -> bool:
     return False
 
 
-def target_path(root: Path, page: Path, url: str) -> Path | None:
+def strip_prefix(path: str, prefix: str | None) -> str:
+    if not prefix:
+        return path
+    base = "/" + prefix.strip("/")
+    if path == base:
+        return "/"
+    if path.startswith(base + "/"):
+        return path[len(base):]
+    return path
+
+
+def target_path(root: Path, page: Path, url: str, prefix: str | None) -> Path | None:
     if url.startswith(SKIP_PREFIXES):
         return None
     parsed = urlparse(url)
     if parsed.scheme or parsed.netloc or not parsed.path:
         return None
-    path = unquote(parsed.path)
+    path = strip_prefix(unquote(parsed.path), prefix)
     if path.startswith("/"):
         target = root / path.lstrip("/")
     else:
@@ -42,7 +54,17 @@ def target_path(root: Path, page: Path, url: str) -> Path | None:
 
 
 def main() -> int:
-    root = Path(sys.argv[1] if len(sys.argv) > 1 else "public").resolve()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("root", nargs="?", default="public", help="build output directory")
+    parser.add_argument(
+        "--prefix",
+        default=None,
+        help="URL path prefix used by the site (e.g. 'club-infantas' for GitHub Pages)",
+    )
+    args = parser.parse_args()
+
+    root = Path(args.root).resolve()
+    prefix = args.prefix
     pages = sorted(root.rglob("*.html"))
     if not pages:
         print(f"No HTML files found in {root}", file=sys.stderr)
@@ -56,7 +78,7 @@ def main() -> int:
         text = page.read_text(encoding="utf-8")
         for match in ATTR_RE.finditer(text):
             url = html.unescape(match.group(1)).strip()
-            target = target_path(root, page, url)
+            target = target_path(root, page, url, prefix)
             if target is not None and not exists(root, target):
                 broken.append((page.relative_to(root), url))
         if any("alt=" not in tag.lower() for tag in IMG_RE.findall(text)):
