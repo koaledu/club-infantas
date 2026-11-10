@@ -1,5 +1,6 @@
 ---
 .title = "Inicio - Club Infantas",
+.description = "Club social, cultural y deportivo en Barrancabermeja. Descubre nuestras escuelas, instalaciones, convenios y cómo afiliarte.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "index.shtml",
 ---

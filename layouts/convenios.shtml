@@ -1,6 +1,7 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
+	<main id="main">
 	<div class="container body-text">
 		<h1 class="heading">Convenios</h1>
 		<p class="page-lead">Clubes y lugares aliados para disfrutar dentro y fuera de Barrancabermeja.</p>
@@ -337,4 +338,5 @@
 			</div>
 		</section>
 	</div>
+	</main>
 </body>

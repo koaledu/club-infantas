@@ -1,5 +1,6 @@
 ---
 .title = "Convenios - Club Infantas",
+.description = "Clubes y lugares aliados del Club Infantas en Barrancabermeja y Colombia: canjes y descuentos para afiliados y sus familias.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "convenios.shtml",
 ---

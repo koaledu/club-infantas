@@ -3,21 +3,27 @@
 	<head id="head">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="description" content="">
+		<meta name="description" content="$page.description">
+		<meta name="theme-color" content="#0f766e">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Club Infantas">
+		<meta property="og:locale" content="es_CO">
+		<meta property="og:title" content="$page.title">
+		<meta property="og:description" content="$page.description">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="$page.title">
+		<meta name="twitter:description" content="$page.description">
 		<title :text="$page.title"></title>
 		<link rel="stylesheet" href="$site.asset('styles/normalize.css').link()">
 		<link rel="stylesheet" href="$site.asset('styles/style.css').link()">
 		<link rel="preload" href="$site.asset('fonts/Rubik-400.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Rubik-700.woff2').link()" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="$site.asset('fonts/Rubik-400i.woff2').link()" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="$site.asset('fonts/Rubik-700i.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Montserrat-400.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Montserrat-700.woff2').link()" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="$site.asset('fonts/Montserrat-400i.woff2').link()" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="$site.asset('fonts/Montserrat-700i.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<super>
 	</head>
 	<body id="body" class="page">
+		<a class="skip-link" href="#main">Saltar al contenido</a>
 		<header class="site-header">
 			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
 			<label for="nav-toggle" class="burger" aria-label="Menú">

@@ -25,6 +25,8 @@ podman run --rm --init -p 1990:1990 -v "$PWD:/src:Z" club-infantas
 
 Abrir `http://localhost:1990`. El bind mount (`-v`) es necesario para el live reload.
 
+La CI (`.github/workflows/build.yml`) compila el sitio y ejecuta `scripts/check_links.py` en cada push.
+
 ## Documentos
 
 Los PDFs de Estatutos y Régimen están en `assets/documents/`, versionados en git, y se enlazan con `$site.asset(...).link()`.

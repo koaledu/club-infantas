@@ -9,24 +9,6 @@
 
 @font-face {
   font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Montserrat Bold Italic'), local('Montserrat'),
-    url('/fonts/Montserrat-700i.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat Italic'), local('Montserrat'),
-    url('/fonts/Montserrat-400i.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -40,24 +22,6 @@
   font-weight: 700;
   font-display: swap;
   src: local('Rubik Bold'), local('Rubik'), url('/fonts/Rubik-700.woff2')
-    format('woff2');
-}
-
-@font-face {
-  font-family: 'Rubik';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Rubik Bold Italic'), local('Rubik'),
-    url('/fonts/Rubik-700i.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Rubik';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Rubik Italic'), local('Rubik'), url('/fonts/Rubik-400i.woff2')
     format('woff2');
 }
 
@@ -113,6 +77,47 @@ html {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+#main {
+  flex: 1 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  background: var(--clr-emerald);
+  color: var(--slate-50);
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:where(a, button, input, label, summary):focus-visible {
+  outline: 3px solid color-mix(in oklch, var(--clr-emerald) 70%, white);
+  outline-offset: 3px;
 }
 
 .container {
@@ -1229,6 +1234,12 @@ figure.about__image-wrapper {
 .school-card__icon {
   width: 3rem;
   height: 3rem;
+}
+
+.school-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .school-card__body {

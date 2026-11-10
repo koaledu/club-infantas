@@ -1,6 +1,10 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
-	<h1 class="heading">Afiliaciones</h1>
-	<p>Contenido de Afiliaciones.</p>
+	<main id="main">
+	<div class="container body-text">
+		<h1 class="heading">Afiliaciones</h1>
+		<p>Contenido de Afiliaciones.</p>
+	</div>
+	</main>
 </body>

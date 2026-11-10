@@ -1,5 +1,6 @@
 ---
 .title = "Instalaciones - Club Infantas",
+.description = "Conoce las instalaciones del Club Infantas: zonas deportivas, piscinas, patinódromo mundialista, salones y espacios para la familia.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "instalaciones.shtml",
 ---

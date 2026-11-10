@@ -1,0 +1,7 @@
+---
+.title = "Página no encontrada - Club Infantas",
+.description = "La página que buscas no existe o cambió de lugar. Vuelve al inicio o explora las secciones del Club Infantas.",
+.date = .date("1990-01-01T00:00:00"),
+.layout = "404.shtml",
+.aliases = ["/404.html"],
+---

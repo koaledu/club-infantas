@@ -1,5 +1,6 @@
 ---
 .title = "Estatutos - Club Infantas",
+.description = "Consulta la reforma de estatutos del Club Infantas y descarga las propuestas presentadas a la asamblea extraordinaria de 2023.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "estatutos.shtml",
 ---

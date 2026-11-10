@@ -1,0 +1,18 @@
+<extend template="base.shtml">
+<head id="head">
+	<meta name="robots" content="noindex">
+</head>
+<body id="body">
+	<main id="main">
+	<div class="container body-text">
+		<h1 class="heading">Página no encontrada</h1>
+		<p class="page-lead">La página que buscas no existe o cambió de lugar.</p>
+		<p>Puedes volver al inicio o explorar nuestras secciones.</p>
+		<div class="cta-band__actions">
+			<a class="btn" href="$site.index().link()">Volver al inicio</a>
+			<a class="btn btn--ghost" href="$site.page('escuelas').link()">Ver escuelas</a>
+			<a class="btn btn--ghost" href="$site.page('afiliaciones').link()">Afiliaciones</a>
+		</div>
+	</div>
+	</main>
+</body>

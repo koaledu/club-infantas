@@ -1,5 +1,6 @@
 ---
 .title = "Régimen tributario - Club Infantas",
+.description = "Informes de gestión y estados financieros del Club Infantas 2019–2025 para consulta y descarga, en el marco del régimen tributario especial.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "regimen.shtml",
 ---

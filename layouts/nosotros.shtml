@@ -1,6 +1,7 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
+	<main id="main">
 	<div class="container body-text">
 		<h1 class="heading">Nosotros</h1>
 		<p class="page-lead">Más de setenta años de historia, deporte y comunidad en el corazón de Barrancabermeja.</p>
@@ -87,4 +88,5 @@
 			</div>
 		</section>
 	</div>
+	</main>
 </body>

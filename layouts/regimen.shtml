@@ -1,6 +1,7 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
+	<main id="main">
 	<div class="container body-text">
 		<h1 class="heading">Régimen tributario</h1>
 
@@ -25,7 +26,7 @@
 					<div class="news-card__body">
 						<span class="news-card__date">2025</span>
 						<h3 class="news-card__title">Informe financiero 2025</h3>
-						<p class="news-card__text">Informe financiero y de gestión del último ejercicio. PDF, 1,1&nbsp;MB.</p>
+						<p class="news-card__text">Informe financiero y de gestión del último ejercicio. PDF, 1,2&nbsp;MB.</p>
 						<p class="docs__actions">
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2025.pdf').link()" target="_blank" rel="noopener">Ver</a>
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2025.pdf').link()" download>Descargar</a>
@@ -37,7 +38,7 @@
 					<div class="news-card__body">
 						<span class="news-card__date">2024</span>
 						<h3 class="news-card__title">Informe de gestión 2024</h3>
-						<p class="news-card__text">Gestión administrativa, financiera y social del año 2024. PDF, 1,1&nbsp;MB.</p>
+						<p class="news-card__text">Gestión administrativa, financiera y social del año 2024. PDF, 1,2&nbsp;MB.</p>
 						<p class="docs__actions">
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2024.pdf').link()" target="_blank" rel="noopener">Ver</a>
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2024.pdf').link()" download>Descargar</a>
@@ -49,7 +50,7 @@
 					<div class="news-card__body">
 						<span class="news-card__date">2023</span>
 						<h3 class="news-card__title">Informe de gestión 2023</h3>
-						<p class="news-card__text">Portafolio e informe anual del Club. PDF, 14,2&nbsp;MB.</p>
+						<p class="news-card__text">Portafolio e informe anual del Club. PDF, 15&nbsp;MB.</p>
 						<p class="docs__actions">
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2023.pdf').link()" target="_blank" rel="noopener">Ver</a>
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2023.pdf').link()" download>Descargar</a>
@@ -61,7 +62,7 @@
 					<div class="news-card__body">
 						<span class="news-card__date">2022</span>
 						<h3 class="news-card__title">Informe de gestión 2022 con dictamen</h3>
-						<p class="news-card__text">Informe anual con dictamen del revisor fiscal. PDF, 5,7&nbsp;MB.</p>
+						<p class="news-card__text">Informe anual con dictamen del revisor fiscal. PDF, 5,8&nbsp;MB.</p>
 						<p class="docs__actions">
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2022.pdf').link()" target="_blank" rel="noopener">Ver</a>
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2022.pdf').link()" download>Descargar</a>
@@ -85,7 +86,7 @@
 					<div class="news-card__body">
 						<span class="news-card__date">2020</span>
 						<h3 class="news-card__title">Informe de gestión 2020</h3>
-						<p class="news-card__text">Informe anual del año 2020. PDF, 16,6&nbsp;MB.</p>
+						<p class="news-card__text">Informe anual del año 2020. PDF, 17&nbsp;MB.</p>
 						<p class="docs__actions">
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2020.pdf').link()" target="_blank" rel="noopener">Ver</a>
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2020.pdf').link()" download>Descargar</a>
@@ -97,7 +98,7 @@
 					<div class="news-card__body">
 						<span class="news-card__date">2019</span>
 						<h3 class="news-card__title">Informe de gestión 2019</h3>
-						<p class="news-card__text">Informe anual del año 2019. PDF, 9,3&nbsp;MB.</p>
+						<p class="news-card__text">Informe anual del año 2019. PDF, 9,4&nbsp;MB.</p>
 						<p class="docs__actions">
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2019.pdf').link()" target="_blank" rel="noopener">Ver</a>
 							<a class="btn docs__btn" href="$site.asset('documents/regimen/informe-de-gestion-2019.pdf').link()" download>Descargar</a>
@@ -108,4 +109,5 @@
 			</div>
 		</section>
 	</div>
+	</main>
 </body>

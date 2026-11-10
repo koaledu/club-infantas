@@ -1,5 +1,6 @@
 ---
 .title = "Nosotros - Club Infantas",
+.description = "Más de setenta años de historia, deporte y comunidad en Barrancabermeja. Conoce la historia, la línea de tiempo y la misión del Club Infantas.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "nosotros.shtml",
 ---

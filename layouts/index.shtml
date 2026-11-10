@@ -5,6 +5,9 @@
 	<link rel="preload" href="$site.asset('images/slide3.avif').link()" as="image">
 </head>
 <body id="body">
+	<main id="main">
+	<h1 class="visually-hidden">Club Infantas</h1>
+
 	<!-- Carrusel -->
 	<section class="carousel" aria-label="Destacados del club">
 		<input type="radio" name="carousel-nav" id="carousel-nav-1" class="carousel__nav-input">
@@ -107,4 +110,5 @@
 			</div>
 		</section>
 	</div>
+	</main>
 </body>

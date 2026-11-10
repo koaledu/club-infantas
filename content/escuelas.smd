@@ -1,5 +1,6 @@
 ---
 .title = "Escuelas - Club Infantas",
+.description = "Ocho escuelas deportivas y musicales del Club Infantas: vallenato, tenis, baloncesto, taekwondo, sóftbol, patinaje, natación y fútbol.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "escuelas.shtml",
 ---

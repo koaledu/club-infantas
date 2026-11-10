@@ -1,6 +1,7 @@
 <extend template="base.shtml">
 <head id="head"></head>
 <body id="body">
+	<main id="main">
 	<div class="container body-text">
 		<h1 class="heading">Reforma de estatutos</h1>
 
@@ -40,4 +41,5 @@
 			</div>
 		</section>
 	</div>
+	</main>
 </body>

@@ -1,5 +1,6 @@
 ---
 .title = "Afiliaciones - Club Infantas",
+.description = "Requisitos, planes y pasos para afiliarte al Club Infantas y disfrutar de sus servicios sociales, culturales y deportivos.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "afiliaciones.shtml",
 ---

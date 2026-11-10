@@ -13,7 +13,7 @@
 | Instalaciones / Afiliaciones | ❌ Placeholders | P0 |
 | Inicio | ❌ Imagen y noticias placeholder | P0 |
 | Dominio / despliegue | ❌ Sin configurar | P0 |
-| SEO base | ❌ Meta descriptions vacías | P0 |
+| SEO base | ✅ Descripciones y metadatos sociales | — |
 | Nosotros / Escuelas / Convenios | 🟡 Datos por confirmar | P1 |
 | Pulido | 🟡 Favicon, 404, etc. | P2 |
 
@@ -24,13 +24,13 @@
 - [x] 8 PDFs (~57 MB) versionados en git (commit `aaefb23`); `.gitignore` ya no excluye `assets/documents/`.
 - [x] `.zip` sin uso eliminado.
 - [x] Build desde clon limpio verificado (8 páginas y 8 PDFs generados).
-- [ ] Corregir etiquetas de tamaño en `layouts/regimen.shtml`: 2020 (17 vs 16,6), 2023 (15 vs 14,2), 2019 (9,4 vs 9,3), 2022 (5,8 vs 5,7), 2024/2025 (1,2 vs 1,1).
+- [x] Etiquetas de tamaño corregidas en `layouts/regimen.shtml` según los archivos reales.
 
 ### 2. Instalaciones (`layouts/instalaciones.shtml`)
 
 - [ ] Reemplazar «Contenido de Instalaciones y Servicios.» por contenido real: zonas deportivas, piscinas, patinódromo, salones, kioscos, capacidad.
 - [ ] Decidir si lleva fotos.
-- [ ] Añadir `<h1>` + `container` como el resto de páginas.
+- [x] Añadido `container` y `<main>` como el resto de páginas.
 
 ### 3. Afiliaciones (`layouts/afiliaciones.shtml`)
 
@@ -52,8 +52,9 @@
 
 ### 6. Metadatos base
 
-- [ ] `meta description` única por página (`layouts/templates/base.shtml:7`).
-- [ ] Revisar títulos y jerarquía de encabezados.
+- [x] `meta description` única en las 9 páginas, definida en `content/*.smd` y renderizada por `base.shtml`.
+- [x] Open Graph, Twitter Card y `theme-color` añadidos.
+- [x] Jerarquía de encabezados revisada (cada página tiene un solo `<h1>`).
 
 ## P1 — Datos por confirmar
 
@@ -63,7 +64,8 @@
 
 **Escuelas** (`layouts/escuelas.shtml`)
 - [ ] Horarios, tarifas, edades/categorías e implementos por escuela.
-- [ ] Fotos: guardar en `assets/images/escuelas/`, insertar `<img class="school-card__photo">` en `.school-card__banner` y añadir `.school-card__photo { width: 100%; height: 100%; object-fit: cover; }` a `style.css`.
+- [ ] Fotos: guardar en `assets/images/escuelas/` e insertar `<img class="school-card__photo">` en `.school-card__banner`.
+- [x] Regla `.school-card__photo` añadida a `style.css`.
 
 **Convenios** (`layouts/convenios.shtml`)
 - [ ] Decidir qué hacen los 8 botones «Más» (`:43, :82, :121, :159, :197, :251, :288, :325`): enlazar o eliminar.
@@ -71,12 +73,13 @@
 
 ## P2 — Pulido
 
-- [ ] Favicon, Open Graph/Twitter y canonical.
-- [ ] `robots.txt`, `sitemap.xml` y página 404.
-- [ ] Revisión de accesibilidad: foco, tabulación, contraste, `aria-*` del carrusel y menú.
-- [ ] Revisar fuentes precargadas (reducir pesos si no se usan).
+- [ ] Favicon y `canonical` (este último requiere el dominio real).
+- [x] `robots.txt` y página 404 (`public/404.html`, con `noindex`).
+- [ ] `sitemap.xml` (requiere el dominio real).
+- [x] Accesibilidad: skip link, landmark `<main>`, foco visible y jerarquía de encabezados.
+- [x] Fuentes precargadas reducidas a 4 pesos; itálicas sin uso eliminadas (~330 KB menos).
 - [ ] Decidir si `content/*.smd` se usa para copy o todo queda en layouts.
-- [ ] Corregir `REUSE.toml` (referencia `.zine.ziggy-schema`, que no existe).
+- [x] `REUSE.toml` corregido y ampliado a los archivos nuevos.
 - [ ] Confirmar licencia/atribución de `assets/images/*.avif`.
 
 ## Documentación
@@ -90,9 +93,12 @@
 ```sh
 podman build -t club-infantas .
 podman run --rm -v "$PWD:/src:Z" club-infantas zine release
+python3 scripts/check_links.py public
 ```
 
-- [ ] 8 páginas y 8 PDFs en `public/`; sin enlaces internos rotos.
+El workflow `.github/workflows/build.yml` ejecuta estos pasos en cada push y PR.
+
+- [ ] 9 páginas y 8 PDFs en `public/`; sin enlaces internos rotos.
 - [ ] Revisar portada, menú móvil, carrusel y descargas en un navegador real.
 - [ ] Probar producción tras desplegar.
 
@@ -105,3 +111,9 @@ podman run --rm -v "$PWD:/src:Z" club-infantas zine release
 - [x] Escuelas con 8 disciplinas y Convenios con Canjes/Descuentos.
 - [x] Estatutos y Régimen con PDFs autoalojados, comprimidos y versionados en git (`aaefb23`); build limpio verificado.
 - [x] `public/` regenerado desde el código actual; salidas viejas de Deportes/Salones/Servicios eliminadas.
+- [x] Descripciones, Open Graph, Twitter Card y `theme-color` en las 9 páginas.
+- [x] Skip link, landmark `<main>`, foco visible y un solo `<h1>` por página.
+- [x] Página 404 (`public/404.html`) y `robots.txt` instalado vía `static_assets`.
+- [x] Fuentes itálicas sin uso eliminadas; solo quedan 4 pesos y 4 preloads.
+- [x] CI de build y checker de enlaces (`.github/workflows/build.yml`, `scripts/check_links.py`).
+- [x] Regla `.school-card__photo` añadida y `REUSE.toml` actualizado.
