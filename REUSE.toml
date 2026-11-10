@@ -18,6 +18,7 @@ path = [
   "TODO.md",
   "zine.ziggy",
   "Containerfile",
+  ".dockerignore",
   ".gitignore",
   "assets/robots.txt",
   "assets/documents/**",

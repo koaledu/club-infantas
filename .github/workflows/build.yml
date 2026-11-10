@@ -14,11 +14,11 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build site
         run: |
-          docker build -t club-infantas .
+          docker build -f Containerfile -t club-infantas .
           docker run --rm -v "$PWD:/src" club-infantas zine release
 
       - name: Check local links and metadata

@@ -19,7 +19,7 @@ zine release  # build estático en public/
 ### Con Podman o Docker
 
 ```sh
-podman build -t club-infantas .
+podman build -f Containerfile -t club-infantas .
 podman run --rm --init -p 1990:1990 -v "$PWD:/src:Z" club-infantas
 ```
 
