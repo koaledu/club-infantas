@@ -49,4 +49,4 @@ Los PDFs de Estatutos y Régimen están en `assets/documents/`, versionados en g
 
 ## Licencia
 
-El código es propietario. Terceros: normalize.css (CC0-1.0), Montserrat y Rubik (OFL-1.1). Ver `LICENSES/` y `REUSE.toml`.
+El código es propietario. Terceros: normalize.css (CC0-1.0), Montserrat, Rubik y los emojis Noto 3D (OFL-1.1). Ver `LICENSES/` y `REUSE.toml`.
