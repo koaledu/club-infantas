@@ -10,9 +10,9 @@
 
 	<!-- Carrusel -->
 	<section class="carousel" aria-label="Destacados del club">
-		<input type="radio" name="carousel-nav" id="carousel-nav-1" class="carousel__nav-input">
-		<input type="radio" name="carousel-nav" id="carousel-nav-2" class="carousel__nav-input">
-		<input type="radio" name="carousel-nav" id="carousel-nav-3" class="carousel__nav-input">
+		<input type="radio" name="carousel-nav" id="carousel-nav-1" class="carousel__nav-input" aria-labelledby="carousel-label-1">
+		<input type="radio" name="carousel-nav" id="carousel-nav-2" class="carousel__nav-input" aria-labelledby="carousel-label-2">
+		<input type="radio" name="carousel-nav" id="carousel-nav-3" class="carousel__nav-input" aria-labelledby="carousel-label-3">
 
 		<div class="carousel__viewport">
 			<ul class="carousel__track">
@@ -48,17 +48,17 @@
 		</div>
 
 		<nav class="carousel__pagination" aria-label="Navegación del carrusel">
-			<label for="carousel-nav-1" class="carousel__dot" aria-label="Slide 1"></label>
-			<label for="carousel-nav-2" class="carousel__dot" aria-label="Slide 2"></label>
-			<label for="carousel-nav-3" class="carousel__dot" aria-label="Slide 3"></label>
+			<label for="carousel-nav-1" class="carousel__dot"><span id="carousel-label-1" class="visually-hidden">Ir a la diapositiva 1</span></label>
+			<label for="carousel-nav-2" class="carousel__dot"><span id="carousel-label-2" class="visually-hidden">Ir a la diapositiva 2</span></label>
+			<label for="carousel-nav-3" class="carousel__dot"><span id="carousel-label-3" class="visually-hidden">Ir a la diapositiva 3</span></label>
 		</nav>
 
-		<label for="carousel-nav-3" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-1" aria-label="Anterior"></label>
-		<label for="carousel-nav-1" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-2" aria-label="Anterior"></label>
-		<label for="carousel-nav-2" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-3" aria-label="Anterior"></label>
-		<label for="carousel-nav-2" class="carousel__arrow carousel__arrow--next carousel__arrow--state-1" aria-label="Siguiente"></label>
-		<label for="carousel-nav-3" class="carousel__arrow carousel__arrow--next carousel__arrow--state-2" aria-label="Siguiente"></label>
-		<label for="carousel-nav-1" class="carousel__arrow carousel__arrow--next carousel__arrow--state-3" aria-label="Siguiente"></label>
+		<label for="carousel-nav-3" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-1"><span class="visually-hidden">Diapositiva anterior</span></label>
+		<label for="carousel-nav-1" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-2"><span class="visually-hidden">Diapositiva anterior</span></label>
+		<label for="carousel-nav-2" class="carousel__arrow carousel__arrow--prev carousel__arrow--state-3"><span class="visually-hidden">Diapositiva anterior</span></label>
+		<label for="carousel-nav-2" class="carousel__arrow carousel__arrow--next carousel__arrow--state-1"><span class="visually-hidden">Diapositiva siguiente</span></label>
+		<label for="carousel-nav-3" class="carousel__arrow carousel__arrow--next carousel__arrow--state-2"><span class="visually-hidden">Diapositiva siguiente</span></label>
+		<label for="carousel-nav-1" class="carousel__arrow carousel__arrow--next carousel__arrow--state-3"><span class="visually-hidden">Diapositiva siguiente</span></label>
 	</section>
 
 	<div class="container">

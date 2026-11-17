@@ -26,7 +26,7 @@
 		<a class="skip-link" href="#main">Saltar al contenido</a>
 		<header class="site-header">
 			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-			<label for="nav-toggle" class="burger" aria-label="Menú">
+			<label for="nav-toggle" class="burger">
 				<span class="burger__icon">
 					<span class="burger__line"></span>
 					<span class="burger__line"></span>
