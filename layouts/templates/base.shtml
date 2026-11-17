@@ -14,8 +14,9 @@
 		<meta name="twitter:title" content="$page.title">
 		<meta name="twitter:description" content="$page.description">
 		<title :text="$page.title"></title>
-		<link rel="stylesheet" href="$site.asset('styles/normalize.css').link()">
-		<link rel="stylesheet" href="$site.asset('styles/style.css').link()">
+		<style :html="$site.asset('styles/fonts.css.tmpl').bytes().fmt($site.asset('fonts/Montserrat-700.woff2').link(), $site.asset('fonts/Montserrat-400.woff2').link(), $site.asset('fonts/Rubik-700.woff2').link(), $site.asset('fonts/Rubik-400.woff2').link())"></style>
+		<style :html="$site.asset('styles/normalize.css').bytes()"></style>
+		<style :html="$site.asset('styles/style.css').bytes()"></style>
 		<link rel="preload" href="$site.asset('fonts/Rubik-400.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Rubik-700.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Montserrat-400.woff2').link()" as="font" type="font/woff2" crossorigin>

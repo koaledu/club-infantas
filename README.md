@@ -47,6 +47,14 @@ Configuración inicial (una sola vez): en **Settings → Pages → Source**, eli
 
 Los PDFs de Estatutos y Régimen están en `assets/documents/`, versionados en git, y se enlazan con `$site.asset(...).link()`.
 
+## Estilos
+
+Los archivos de `assets/styles/` se inyectan en el `<head>` durante el build (ver `layouts/templates/base.shtml`) para no bloquear el renderizado con CSS externo. Los `@font-face` se generan desde `fonts.css.tmpl`, donde Zine resuelve las URLs de las fuentes.
+
+## Fuentes
+
+Montserrat y Rubik se incluyen en un subconjunto latino (caracteres del español) para reducir su peso total de 320 KiB a 96 KiB. Si se añade texto en otros alfabetos, hay que regenerar los subconjuntos.
+
 ## Licencia
 
 El código es propietario. Terceros: normalize.css (CC0-1.0), Montserrat, Rubik y los emojis Noto 3D (OFL-1.1). Ver `LICENSES/` y `REUSE.toml`.

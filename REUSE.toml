@@ -8,6 +8,7 @@ SPDX-License-Identifier = "CC0-1.0"
 [[annotations]]
 path = [
   "assets/styles/style.css",
+  "assets/styles/fonts.css.tmpl",
   "content/*.smd",
   "content/.smd.ziggy-schema",
   "flake.nix",
