@@ -2,6 +2,7 @@
 <html lang="es">
 	<head id="head">
 		<meta charset="UTF-8">
+		<super>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="description" content="$page.description">
 		<meta name="theme-color" content="#0f766e">
@@ -21,7 +22,6 @@
 		<link rel="preload" href="$site.asset('fonts/Rubik-700.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Montserrat-400.woff2').link()" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="$site.asset('fonts/Montserrat-700.woff2').link()" as="font" type="font/woff2" crossorigin>
-		<super>
 	</head>
 	<body id="body" class="page">
 		<a class="skip-link" href="#main">Saltar al contenido</a>

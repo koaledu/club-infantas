@@ -432,7 +432,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  animation: carousel-autoscroll 15s infinite;
+  animation: carousel-autoscroll 15s 5s infinite;
 }
 
 .carousel__slide {
