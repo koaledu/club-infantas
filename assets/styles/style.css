@@ -502,18 +502,32 @@ html {
 }
 
 .carousel__dot {
+  position: relative;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: color-mix(in oklch, var(--slate-50) 40%, transparent);
   border: 1px solid color-mix(in oklch, var(--slate-50) 60%, transparent);
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.carousel__dot::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 50%;
+  background: var(--slate-50);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .carousel__dot:hover {
-  background: color-mix(in oklch, var(--slate-50) 75%, transparent);
   transform: scale(1.2);
+}
+
+.carousel__dot:hover::after {
+  opacity: 0.6;
 }
 
 .carousel__nav-input:nth-of-type(1):checked ~ .carousel__viewport .carousel__track {
@@ -534,11 +548,17 @@ html {
 .carousel__nav-input:nth-of-type(1):checked ~ .carousel__pagination .carousel__dot:nth-of-type(1),
 .carousel__nav-input:nth-of-type(2):checked ~ .carousel__pagination .carousel__dot:nth-of-type(2),
 .carousel__nav-input:nth-of-type(3):checked ~ .carousel__pagination .carousel__dot:nth-of-type(3) {
-  background: var(--slate-50);
   transform: scale(1.25);
 }
 
-.carousel__nav-input:checked ~ .carousel__pagination .carousel__dot {
+.carousel__nav-input:nth-of-type(1):checked ~ .carousel__pagination .carousel__dot:nth-of-type(1)::after,
+.carousel__nav-input:nth-of-type(2):checked ~ .carousel__pagination .carousel__dot:nth-of-type(2)::after,
+.carousel__nav-input:nth-of-type(3):checked ~ .carousel__pagination .carousel__dot:nth-of-type(3)::after {
+  opacity: 1;
+}
+
+.carousel__nav-input:checked ~ .carousel__pagination .carousel__dot,
+.carousel__nav-input:checked ~ .carousel__pagination .carousel__dot::after {
   animation: none;
 }
 
@@ -621,26 +641,26 @@ html {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .carousel__pagination .carousel__dot:nth-of-type(1) {
+  .carousel__pagination .carousel__dot:nth-of-type(1)::after {
     animation: carousel-dot 15s infinite;
   }
 
-  .carousel__pagination .carousel__dot:nth-of-type(2) {
+  .carousel__pagination .carousel__dot:nth-of-type(2)::after {
     animation: carousel-dot 15s -10s infinite;
   }
 
-  .carousel__pagination .carousel__dot:nth-of-type(3) {
+  .carousel__pagination .carousel__dot:nth-of-type(3)::after {
     animation: carousel-dot 15s -5s infinite;
   }
 }
 
 @keyframes carousel-dot {
   0%, 28% {
-    background: var(--slate-50);
+    opacity: 1;
     transform: scale(1.25);
   }
   33.33%, 100% {
-    background: color-mix(in oklch, var(--slate-50) 40%, transparent);
+    opacity: 0;
     transform: scale(1);
   }
 }
