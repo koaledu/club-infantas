@@ -1,8 +1,6 @@
 <extend template="base.shtml">
 <head id="head">
 	<link rel="preload" href="$site.asset('images/slide1-1200.avif').link()" as="image" imagesrcset="$site.asset('images/slide1-600.avif').link().suffix(' 600w, ', $site.asset('images/slide1-750.avif').link(), ' 750w, ', $site.asset('images/slide1-1200.avif').link(), ' 1200w')" imagesizes="(max-width: 768px) 100vw, 1200px" fetchpriority="high">
-	<link rel="preload" href="$site.asset('images/slide2-1200.avif').link()" as="image">
-	<link rel="preload" href="$site.asset('images/slide3-1200.avif').link()" as="image">
 </head>
 <body id="body">
 	<main id="main">
