@@ -432,6 +432,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  animation: carousel-autoscroll 15s 5s infinite;
 }
 
 .carousel__slide {
@@ -610,6 +611,13 @@ html {
   .carousel__track {
     animation: none;
   }
+}
+
+@keyframes carousel-autoscroll {
+  0%, 28% { transform: translateX(0); }
+  33.33%, 61% { transform: translateX(-25%); }
+  66.66%, 94% { transform: translateX(-50%); }
+  100% { transform: translateX(-75%); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
